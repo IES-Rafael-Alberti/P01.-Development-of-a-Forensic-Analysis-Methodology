@@ -43,7 +43,8 @@ ___
 
 ### Análisis de la evidencia
 
-Para adaptar la fase de analisis, despues de valorar las diferentes opciones disponibles hemos optado por utilizar de base la normativa UNE 71506. 
+Para adaptar la fase de analisis, despues de valorar las diferentes opciones disponibles hemos optado por utilizar de base la normativa UNE 71506. Este manual se centra en el analisis forense y lo explica de manera sencill y concisa pero mantiene la base funcional que necesitamos. 
+
 El análisis forense de evidencias digitales debe seguir un proceso metódico, auditable y repetible. El objetivo es responder a preguntas sobre el tiempo de intrusión, su origen, los sistemas afectados, los métodos usados, y los activos alterados o accedidos.
 Antes de iniciar el análisis, se deben cumplir los siguientes pasos preliminares:
 
@@ -147,27 +148,20 @@ ___
 #### Fase 5: Análisis Detallado de los Datos Obtenidos
 - **Análisis exhaustivo**: Usar software especializado para clasificar y buscar datos relevantes.
 - **Áreas de interés específicas**:
-  1. Información del sistema.
-  2. Dispositivos conectados (USBs, impresoras, móviles).
-  3. Escritorio y papelera de reciclaje.
-  4. Conexiones de red y protocolos.
-  5. Comunicaciones realizadas.
-  6. Registros del sistema.
-  7. Espacios no asignados del disco.
-  8. Archivos de hibernación y paginación.
-  9. Cola de impresión.
-  10. Enlaces a archivos recientes.
-  11. Carpetas de usuarios.
-  12. Programas instalados.
-  13. Metadatos.
-  14. Aplicaciones de virtualización.
-  15. Bases de datos.
-  16. Archivos cifrados y particiones protegidas.
-  17. Historial de navegación y cookies.
-  18. Correos electrónicos.
-  19. Registros de mensajería instantánea y chats.
 
-#### Pasos preliminares
+| N.º | Área de interés                            | N.º | Área de interés                          |
+|-----|--------------------------------------------|-----|------------------------------------------|
+| 1   | Información del sistema                    | 11  | Carpetas de usuarios                     |
+| 2   | Dispositivos conectados (USBs, impresoras) | 12  | Programas instalados                     |
+| 3   | Escritorio y papelera de reciclaje         | 13  | Metadatos                                |
+| 4   | Conexiones de red y protocolos             | 14  | Aplicaciones de virtualización           |
+| 5   | Comunicaciones realizadas                  | 15  | Bases de datos                           |
+| 6   | Registros del sistema                      | 16  | Archivos cifrados y particiones protegidas|
+| 7   | Espacios no asignados del disco            | 17  | Historial de navegación y cookies        |
+| 8   | Archivos de hibernación y paginación       | 18  | Correos electrónicos                     |
+| 9   | Cola de impresión                          | 19  | Registros de mensajería y chats          |
+| 10  | Enlaces a archivos recientes               |     |                                          |
+
 
 
 ### Documentación de hallazgos
