@@ -1,34 +1,58 @@
 # P01.-Development-of-a-Forensic-Analysis-Methodology
 
-El analisis es el paso que describe los siguientes procesos clave para llevar a cabo un estudio adecuado de la información digital y su posterior inclusión en un informe pericial:
+Para nuestra normativa, despues de valorar las diferentes opciones disponibles hemos optado por utilizar de base la normativa UNE 71506. 
+El análisis forense de evidencias digitales debe seguir un proceso metódico, auditable y repetible. El objetivo es responder a preguntas sobre el tiempo de intrusión, su origen, los sistemas afectados, los métodos usados, y los activos alterados o accedidos.
 
-## 1. Acciones previas al análisis
-- Verificación de la competencia del laboratorio o entorno forense.
-- Revisión de la documentación adjunta a las evidencias electrónicas y de la cadena de custodia.
-- Evaluación del estado de las evidencias para asegurar su viabilidad en el análisis forense.
+## Pasos preliminares
 
-## 2. Recuperación de ficheros borrados
-- Localización de archivos eliminados en las estructuras de almacenamiento (tablas FS, MFT, etc.).
-- Recuperación parcial o total de datos eliminados y de archivos "huérfanos" no vinculados a carpetas activas.
-- Clarificación en el informe pericial del método usado para la recuperación de datos.
+Antes de iniciar el análisis, se deben cumplir los siguientes pasos preliminares:
 
-## 3. Estudio de las particiones y sistemas de archivos
-- Análisis de las particiones y volúmenes lógicos en los dispositivos de almacenamiento.
-- Identificación de áreas ocultas (HPA, DCO, etc.) y discos cifrados.
-- Montaje y verificación de archivos contenedores y cabeceras de formatos de archivo.
+1. **Comprobar competencias**: Verificar si el análisis solicitado está dentro de la competencia del laboratorio forense.
+2. **Revisión documental**: Estudiar la documentación adjunta para contextualizar las evidencias y las relaciones entre ellas.
+3. **Supervisión de la cadena de custodia**: Comprobar quién recogió las evidencias, cuándo, dónde, y cómo se almacenaron hasta llegar al laboratorio.
+4. **Autorizaciones**: Obtener permisos legales para realizar el análisis, según la normativa vigente.
+5. **Comprobación de estado**: Verificar que las evidencias no están dañadas y son susceptibles de análisis.
+6. **Evidencias adicionales**: Si se encuentran nuevas evidencias (memorias, discos, etc.), estas deben ser registradas y se deben obtener nuevas autorizaciones para analizarlas.
+7. **Hora del BIOS**: Registrar la hora del BIOS del equipo donde se alojan los discos para poder comparar la cronología.
+8. **Establecer prioridades**: Definir criterios de prioridad en el análisis.
 
-## 4. Estudio del sistema operativo
-- Identificación y análisis de los sistemas operativos instalados y su fecha de instalación.
-- Evaluación de la actividad de los usuarios, permisos y política de seguridad del sistema.
-- Revisión de dispositivos de hardware y software reconocidos por el sistema.
+### 1. Recuperación de ficheros borrados
+Este proceso busca recuperar archivos eliminados de las estructuras de almacenamiento (como tablas FS o MFT). Además, se recuperan archivos de áreas no asignadas del disco o ficheros "huérfanos". También se localizan fragmentos de archivos mediante la búsqueda de sus cabeceras. La trazabilidad de toda la información recuperada debe estar documentada en el informe.
 
-## 5. Estudio de la seguridad implementada
-- Investigación de las evidencias electrónicas para determinar si han sido comprometidas.
-- Identificación de software malicioso (virus, troyanos, etc.) y evaluación de intrusiones en el sistema.
+### 2. Estudio de particiones y sistemas de archivos
+Se analiza la estructura de almacenamiento (particiones, volúmenes físicos y lógicos, sistemas RAID, etc.). Este proceso incluye:
+- Enumeración de particiones actuales y previas.
+- Identificación de áreas ocultas (HPA, DCO).
+- Reconocimiento de sistemas de archivos en contenedores y discos cifrados.
+- Análisis de archivos comprimidos y sus cabeceras.
 
-## 6. Análisis detallado de los datos obtenidos
-- Clasificación y análisis exhaustivo de las evidencias electrónicas utilizando software forense especializado.
-- Realización de un proceso de indexación de datos para facilitar búsquedas posteriores.
-- El análisis forense debe responder estrictamente a las cuestiones planteadas por la entidad solicitante, garantizando la trazabilidad y la cadena de custodia.
+### 3. Estudio del sistema operativo
+Se identifican los sistemas operativos instalados, su fecha de instalación, actualizaciones, usuarios, privilegios y las últimas actividades registradas. También se examinan los dispositivos de hardware y software reconocidos por el sistema.
 
-Este análisis incluye procesos como la recuperación de datos eliminados, la identificación de sistemas operativos y redes, y el estudio de la actividad de usuarios, garantizando siempre la validez legal de los resultados mediante el uso de herramientas y metodologías forenses.
+### 4. Estudio de la seguridad implementada
+Este proceso evalúa si las evidencias han sido comprometidas mediante métodos de intrusión, modificación o eliminación. Se debe identificar malware (virus, troyanos, etc.) y evaluar su impacto en el sistema.
+
+### 5. Análisis detallado de los datos obtenidos
+Se realiza un análisis exhaustivo de las evidencias electrónicas utilizando software forense especializado. Este análisis incluye la clasificación y, opcionalmente, el indexado de los datos, lo que agiliza la búsqueda de información clave mediante palabras o criterios específicos.
+
+El análisis debe incluir:
+
+1. Información del sistema (hardware, última actividad, configuración regional, etc.).
+2. Dispositivos conectados (USBs, impresoras, móviles, etc.).
+3. Escritorio del usuario y papelera de reciclaje.
+4. Conexiones de red y protocolos utilizados.
+5. Comunicaciones realizadas desde el equipo.
+6. Registros del sistema y auditoría.
+7. Espacios no asignados en el disco.
+8. Archivos de hibernación, paginación y de intercambio.
+9. Cola de impresión.
+10. Enlaces a archivos recientes.
+11. Carpetas de los distintos usuarios.
+12. Programas instalados (ofimáticos, de imagen, audio, video, contabilidad, etc.).
+13. Metadatos.
+14. Aplicaciones de virtualización y sus configuraciones.
+15. Bases de datos y gestores de bases de datos.
+16. Archivos cifrados y particiones protegidas.
+17. Navegación por Internet (historial, cookies).
+18. Correos electrónicos y correos web.
+19. Registros de mensajería instantánea y chats.
