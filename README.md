@@ -52,6 +52,10 @@ Estas dos normas se relacionan con el manejo de las evidencias digitales y tecno
 
 Aunque también tiene varias diferencias como pueden ser que la UNE 71505-3 trata sobre formatos de intercambios de evidencias y mecanismo para mantener su confiabilidad, también se enfoca en las fases de gestión y manejo técnico de las evidencias en cambio la norma UNE 197010 establece requisitos formales ara informes y dictámenes periciales, sin entrar en métodos específicos de análisis y también se centra en la fase final de presentación de resultados en forma de informes y dictámenes.
 
+|          | Características principales |
+|:--------:|:---------------------------:|
+| **UNE 71505-3** | Formatos de intercambio de evidencias y mecanismos para mantener su confiabilidad. Enfoque en fases de gestión y manejo técnico de las evidencias. |
+| **UNE 197010** | Requisitos formales para informes y dictámenes periciales. Enfoque en la presentación final de resultados. |
 
 ### RFC 4998 y RFC 6283
 Ambas se centran en demostrar la existencia de datos en momento concreto con el uso de marcas de tiempo, el RFC 4998 es más amplio, definiendo los requisitos generales para el registro de evidencias además de definir el estándar ERS mientras que el RFC 6283 se centra específicamente en la implementación del estándar ERS con el uso de XML.
