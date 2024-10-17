@@ -132,6 +132,8 @@ Para adaptar la fase de análisis, después de valorar las diferentes opciones d
 El análisis forense de evidencias digitales debe seguir un proceso metódico, auditable y repetible. El objetivo es responder a preguntas sobre el tiempo de intrusión, su origen, los sistemas afectados, los métodos usados, y los activos alterados o accedidos.
 Antes de iniciar el análisis, se deben cumplir los siguientes pasos preliminares:
 
+#### Pasos Preliminares
+
 1. **Comprobar competencias**: Verificar si el análisis solicitado está dentro de la competencia del laboratorio forense.
 2. **Revisión documental**: Estudiar la documentación adjunta para contextualizar las evidencias y las relaciones entre ellas.
 3. **Supervisión de la cadena de custodia**: Comprobar quién recogió las evidencias, cuándo, dónde, y cómo se almacenaron hasta llegar al laboratorio.
@@ -269,16 +271,16 @@ Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práct
     - Almacenamiento hasta el análisis (mantener protegidas las evidencias hasta el análisis)
     - Atención a dispositivos que requieran energía (mantenerlos conectados para evitar la pérdida de datos)
 
-### Análisis de la evidencia
+### [Análisis de la evidencia](#análisis-de-la-evidencia)
 
 | Fase | Descripción |
 |------|-------------|
-| **Pasos preliminares** | 1. Comprobar competencias<br>2. Revisión documental<br>3. Supervisión de la cadena de custodia<br>4. Autorizaciones<br>5. Comprobación de estado<br>6. Evidencias adicionales<br>7. Hora del BIOS<br>8. Establecer prioridades |
-| **Recuperación de ficheros borrados** | - Recuperar archivos eliminados<br>- Localizar fragmentos de archivos<br>- Documentar trazabilidad |
-| **Estudio de particiones y sistemas de archivos** | - Enumeración de particiones<br>- Identificación de áreas ocultas<br>- Reconocimiento de sistemas de archivos<br>- Análisis de archivos comprimidos |
-| **Estudio del sistema operativo** | - Identificar sistemas operativos instalados<br>- Examinar usuarios y privilegios<br>- Analizar dispositivos de hardware y software |
-| **Estudio de la seguridad implementada** | - Evaluar compromiso de evidencias<br>- Identificar malware<br>- Evaluar impacto en el sistema |
-| **Análisis detallado de los datos obtenidos** | 1. Información del sistema<br>2. Dispositivos conectados<br>3. Escritorio y papelera<br>4. Conexiones de red<br>5. Comunicaciones<br>6. Registros del sistema<br>7. Espacios no asignados<br>8. Archivos de sistema<br>9. Cola de impresión<br>10. Enlaces recientes<br>11. Carpetas de usuarios<br>12. Programas instalados<br>13. Metadatos<br>14. Aplicaciones de virtualización<br>15. Bases de datos<br>16. Archivos cifrados<br>17. Navegación por Internet<br>18. Correos electrónicos<br>19. Registros de mensajería |
+| **[Pasos preliminares](#pasos-preliminares)** | 1. Comprobar competencias<br>2. Revisión documental<br>3. Supervisión de la cadena de custodia<br>4. Autorizaciones<br>5. Comprobación de estado<br>6. Evidencias adicionales<br>7. Hora del BIOS<br>8. Establecer prioridades |
+| **[Recuperación de ficheros borrados](#recuperación-de-ficheros-borrados)** | - Recuperar archivos eliminados<br>- Localizar fragmentos de archivos<br>- Documentar trazabilidad |
+| **[Estudio de particiones y sistemas de archivos](#estudio-de-particiones-y-sistemas-de-archivos)** | - Enumeración de particiones<br>- Identificación de áreas ocultas<br>- Reconocimiento de sistemas de archivos<br>- Análisis de archivos comprimidos |
+| **[Estudio del sistema operativo](#estudio-del-sistema-operativo)** | - Identificar sistemas operativos instalados<br>- Examinar usuarios y privilegios<br>- Analizar dispositivos de hardware y software |
+| **[Estudio de la seguridad implementada](#estudio-de-la-seguridad-implementada)** | - Evaluar compromiso de evidencias<br>- Identificar malware<br>- Evaluar impacto en el sistema |
+| **[Análisis detallado de los datos obtenidos](#análisis-detallado-de-los-datos-obtenidos)** | 1. Información del sistema<br>2. Dispositivos conectados<br>3. Escritorio y papelera<br>4. Conexiones de red<br>5. Comunicaciones<br>6. Registros del sistema<br>7. Espacios no asignados<br>8. Archivos de sistema<br>9. Cola de impresión<br>10. Enlaces recientes<br>11. Carpetas de usuarios<br>12. Programas instalados<br>13. Metadatos<br>14. Aplicaciones de virtualización<br>15. Bases de datos<br>16. Archivos cifrados<br>17. Navegación por Internet<br>18. Correos electrónicos<br>19. Registros de mensajería |
 
 ### Documentación de hallazgos
 
