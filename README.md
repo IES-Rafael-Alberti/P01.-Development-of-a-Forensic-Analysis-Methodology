@@ -157,7 +157,7 @@ Se identifican los sistemas operativos instalados, su fecha de instalación, act
 #### Estudio de la seguridad implementada
 Este proceso evalúa si las evidencias han sido comprometidas mediante métodos de intrusión, modificación o eliminación. Se debe identificar malware (virus, troyanos, etc.) y evaluar su impacto en el sistema.
 
-#### . Análisis detallado de los datos obtenidos
+#### Análisis detallado de los datos obtenidos
 Se realiza un análisis exhaustivo de las evidencias electrónicas utilizando software forense especializado. Este análisis incluye la clasificación y, opcionalmente, el indexado de los datos, lo que agiliza la búsqueda de información clave mediante palabras o criterios específicos.
 
 El análisis debe incluir:
