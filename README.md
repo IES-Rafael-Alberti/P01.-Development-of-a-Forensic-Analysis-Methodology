@@ -40,6 +40,11 @@ Algunas de las normas y estándares analizados tienen similitudes entre si. Aunq
 
 ### UNE 71506, NIST Special Publication 800-86 e ISO/IEC 27037:2012(E)
 Aunque estas tres normas cubren gran parte del proceso de análisis forense digital sólo el UNE 71506 cubre el proceso completo mientras que el ISO/IEC 27037:2012(E) se centra en la identificación, recolección, adquisición y preservación de las evidencias digitales y el NIST Special Publication 800-86 se centra en integrar técnicas forenses en la respuesta a incidentes. Además el UNE 71506 es una norma española aplicable en el contexto legal y forense español, mientras que el NIST Special Publication 800-86 está más orientada a las organizaciones de los EE.UU. y el ISO/IEC 27037:2012(E) está diseñada para poder aplicarse internacionalmente.
+|          | Ámbito | Características principales |
+|:--------:|:------:|:---------------------------:|
+| **UNE 71506** | España | Proceso completo del análisis forense |
+| **NIST Special Publication 800-86** | Internacional | Fases iniciales del análisis forense |
+| **ISO/IEC 27037:2012(E)** | EE.UU. | Integración técnicas forenses en respuesta a incidentes |
 
 ### UNE 71505-3 y UNE 197010
 
@@ -50,6 +55,10 @@ Aunque también tiene varias diferencias como pueden ser que la UNE 71505-3 trat
 
 ### RFC 4998 y RFC 6283
 Ambas se centran en demostrar la existencia de datos en momento concreto con el uso de marcas de tiempo, el RFC 4998 es más amplio, definiendo los requisitos generales para el registro de evidencias además de definir el estándar ERS mientras que el RFC 6283 se centra específicamente en la implementación del estándar ERS con el uso de XML.
+|          | Características principales |
+|:--------:|:---------------------------:|
+| **RFC 4998** | Estándar ERS y requisitos para el registro de evidencias |
+| **RFC 6283** | Adaptación de ERS con XML |
 
 ### RFC 3227 y RFC 4810
 
@@ -60,38 +69,59 @@ ___
 Tras realizar un estudio de las normas existentes, hemos decidido incluir en nuestra metodología las normas ISO/IEC 27037:2012(E), UNE 71506:2013, UNE 71506. En cada apartado analizaremos en que normativa se basa y el porqué de nuestra elección. 
 
 ### Adquisición de evidencia digital
- Para la adquisición de evidencia digital hemos decidido basarnos en la norma ISO/IEC 27037:2012(E) ya que está diseñada para aplicarse en el ámbito internacional a diferencia de la UNE 71506 que se centra más en el ámbito español. Esto nos permitirá mantener nuestra metodología aunque trabajemos fuera del ámbito español.
+Para la adquisición de evidencia digital hemos decidido basarnos en la norma ISO/IEC 27037:2012(E) ya que está diseñada para aplicarse en el ámbito internacional a diferencia de la UNE 71506 que se centra más en el ámbito español. Esto nos permitirá mantener nuestra metodología aunque trabajemos fuera del ámbito español.
 
- Esta parte de la metodología se centra en la identificación de posibles evidencias digitales y objetos relacionados (como por ejemplo post-its en un monitor con posibles contraseñas) y en la adquisición de dichas evidencias ya sea en la propia escena de la investigación o en nuestro laboratorio forense.
+Durante la identificación de evidencias y la adquisición deberemos de ir rellenando nuestro acta de adquisición de evidencias digitales. Para ello usaremos el siguiente modelo:
+#### Acta de Adquisición de Evidencias Digitales
+| Acta de Adquisición de Evidencias Digitales |                                   |
+|---------------------------------------------|-----------------------------------|
+| **1. Información General**                  |                                   |
+| Número de Caso                              |                                   |
+| Fecha y Hora de Adquisición                 |                                   |
+| Lugar de Adquisición                        |                                   |
+| Analista Forense                            |                                   |
+| Número de Identificación del Analista       |                                   |
+| **2. Descripción del Dispositivo/Evidencia** |                                   |
+| Tipo de Dispositivo                         |                                   |
+| Marca y Modelo                              |                                   |
+| Número de Serie                             |                                   |
+| Capacidad de Almacenamiento                 |                                   |
+| Estado Físico                               |                                   |
+| **3. Metodología de Adquisición**           |                                   |
+| Herramientas Utilizadas                     |                                   |
+| Método de Adquisición                       |                                   |
+| Hash de Verificación MD5                    |                                   |
+| Hash de Verificación SHA-256                |                                   |
+| **4. Detalles del Proceso**                 |                                   |
+| Hora de Inicio                              |                                   |
+| Hora de Finalización                        |                                   |
+| Observaciones                               |                                   |
+| **5. Testigos**                             |                                   |
+| Nombre del Testigo 1                        |                                   |
+| Firma Testigo 1                             |                                   |
+| Nombre del Testigo 2                        |                                   |
+| Firma Testigo 2                             |                                   |
+| **6. Declaración del Analista**             | Yo, _______________________, certifico que la información contenida en esta acta es verdadera y precisa según mi mejor conocimiento y habilidad. La adquisición de evidencias se realizó siguiendo los procedimientos forenses estándar y manteniendo la integridad de la evidencia en todo momento. |
+| Firma del Analista                          |                                   |
+| Fecha                                       |                                   |
+| **8. Anexos**                               | - Fotografías del dispositivo<br>- Logs de la herramienta de adquisición<br>- Otros documentos relevantes |
 
- Cuando identifiquemos las posibles evidencias deberemos de fotografiar y anotar todas las posibles evidencias digitales, su estado y su localización. Deberemos de asegurarnos de no cambiar el estado de dichos dispositivos (por ejemplo encender un portatil que se encontraba apagado) y de que nadie manipule las evidencias.
-
- Tras haber realizado el proceso de identificación deberemos de determinar si debemos de recolectar las fuentes de evidencias para realizar su adquisición más tarde en nuestro laboratorio forense o adquirirlas in situ. Para esto deberemos de tener en cuenta si los dispositivos están encendidos o no, la volatilidad de las posibles evidencias, la existencia de encriptado de los discos. Si por ejemplo nos encontramos con un equipo encendido con discos encriptados pero cuya clave se encuentra en la memoria volátil del equipo deberíamos de realizar la adquisición en ese momento, ya que podríamos perder el acceso a esos discos duros encriptados.
-
- Según si pensamos realizar una adquisición o una recolección y si el equipo se encuentra encendido o apagado deberemos de seguir unos pasos distintos:
-
- **Recolección de dispositivos encendidos**
-1) Considerar la adquisición de la memoria volátil del dispositivo y de su estado actual antes de apagarlo. Debemos de realizar esta adquisición documentando todo el proceso y con nuestras propias herramientas ya que no podemos confiar en las del propio dispositivo.
-2) Apagar el dispositivo y desconectar su batería en caso de ser un dispositivo portátil.
-3) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
-4) Poner cinta adhesiva sobre el botón de encendido del dispositivo para evitar su encendido, además de sobre el lector de DVDs en caso de tenerlo.
-5) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
-
-**Recolección de dispositivos apagados**
-1) Desconectar el cable de corriente retirando primero el extremo conectado al dispositivo.
-2) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
-3) Poner cinta adhesiva sobre el botón de encendido del dispositivo para evitar su encendido, además de sobre el lector de DVDs en caso de tenerlo.
-4) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
+Deberemos de actuar de distinta manera dependiendo de si el dispositivo se encuentra encendido desde la incidencia que estamos investigando o si el dispositivo se ha apagado en algún momento desde la incidencia.
 
 **Adquisición de dispositivos encendidos**
-1) Considerar la adquisición de la memoria volátil del dispositivo y de su estado actual antes de apagarlo. Debemos de realizar esta adquisición documentando todo el proceso y con nuestras propias herramientas ya que no podemos confiar en las del propio dispositivo.
-2) Realizar la adquisición de la memoria no volátil del dispositivo documentando todo el proceso y realizando la imagen usando una herramienta validada. Esta imagen deberá ser almacenada en un dispositivo de almacenamiento nuevo o formateado de manera segura.
+1) Realizar la adquisición de la memoria volátil del dispositivo
+2) Realizar la adquisición de la memoria no volátil del dispositivo.
+3) Apagar el dispositivo y desconectar su batería en caso de ser un dispositivo portátil.
+4) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
+5) Poner cinta adhesiva sobre el botón de encendido del dispositivo y el lector ded CDs.
+6) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
 
 **Adquisición de dispositivos apagados**
-1) Asegurarnos de que el dispositivo realmente está apagado.
-2) Desconectar el dispositivo de almacenamiento si aún está conectado al equipo.
-3) Realizar la imagen del dispositivo de almacenamiento usando una herramienta validada, documentando el proceso y almacenando la imagen en un dispositivo de almacenamiento nuevo o formateado de manera segura.
-4) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
+1) Realizar la adquisición de la memoria no volátil del dispositivo.
+2) Desconectar el cable de corriente retirando primero el extremo conectado al dispositivo.
+3) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
+4) Poner cinta adhesiva sobre el botón de encendido del dispositivo y el lector ded CDs.
+5) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
 
 ### Preservación y almacenamiento de la evidencia
 
@@ -221,16 +251,13 @@ ___
 
 Una vez realizada nuestra metodología, esquematizaremos las partes que la componen para tener una guía visual de cómo funciona de forma muy reducida el flujo de acciones. Veremos los cuatro apartados que la componen:
 
-### Adquisición de evidencia digital
+### [Adquisición de evidencia digital](#adquisición-de-evidencia-digital)
 
-Primero identificar evidencias digitales y objetos relacionados fotografiándolos y anotando todo sobre ellos.
+[Acta de Adquisición de Evidencias Digitales](#acta-de-adquisición-de-evidencias-digitales)
 
-Luego decidir si realizar una adquisición o recolección dependiendo del estado de los dispositivos y si están encendidos o no.
-
-|                 | Dispositivo encendido | Dispositivo apagado |
-| :-------------: | :-------------------: | :-----------------: |
-| **Recolección** | 1. Adquisición de memoria volátil <br> 2. Apagarlo y desconectar batería si tiene <br> 3. Etiquetar, desconectar y asegurar cables <br> 4. Cinta sobre el botón de inicio y lector de CDs <br> 5. Almacenamiento y sellado| 1. Desconectar cable de corriente <br> 2. Etiquetar, desconectar y asegurar cables <br> 3. Cinta sobre el botón de inicio y lector de CDs <br> 4. Almacenamiento y sellado|
-| **Adquisición** | 1. Adquisición de la memoria volátil <br> 2. Adquisición de la memoria no volátil| 1. Asegurar que está apagado <br> 2. Desconectar dispositivo de almacenamiento <br> 3. Bloquear la escritura y realizar la imagen del dispositivo de almacenamiento <br> 4. Almacenamiento y sellado|
+| Dispositivo encendido | Dispositivo apagado |
+| :-------------------: | :-----------------: |
+| 1. Adquisición memoria volátil <br> 2. Adquisición memoria no volátil <br> 3. Apagar dispositivo <br> 4. Adquisición de cables <br> 5. Tapar botón de encendido y lector de CDs <br> 6. Almacenamiento | 1. Adquisición memoria no volátil <br> 2. Apagar dispositivo <br> 3. Adquisición de cables <br> 4. Tapar botón de encendido y lector de CDs <br> 5. Almacenamiento|
 
 ### Preservación y almacenamiento de la evidencia
 
