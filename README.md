@@ -33,6 +33,13 @@
 ___
 ## Comparativa de las normas y estándares
 
+### UNE 71505-3 y UNE 197010
+
+Estas dos normas se relacionan con el manejo de las evidencias digitales y tecnologías de la información y comunicación (TIC).También son relevantes para el campo de la informática forense y peritaje tecnológico. Y además ambas son normas UNE (Una Norma Española), diseñadas para el uso en un contexto español.
+
+Aunque también tiene varias diferencias como pueden ser que la UNE 71505-3 trata sobre formatos de intercambios de evidencias y mecanismo para mantener su confiabilidad, también se enfoca en las fases de gestión y manejo técnico de las evidencias en cambio la norma UNE 197010 establece requisitos formales ara informes y dictámenes periciales, sin entrar en métoos específicos de análisis y también se centra en la fase final de presentación de resultados en forma de informes y dictámenes.
+
+
 
 ___
 ## Desarrollo de metodología propia
@@ -135,7 +142,7 @@ El análisis debe incluir:
 
 ### Documentación de hallazgos
 
-Para realizar un buen análisis forense hemos decidido centrarnos en la norma UNE 71506 ya que se adapta perfectamente al contexto de leyes nacionales y legales en España. A continuación te dejo algunas de las razones más importantes:
+Para realizar un buen análisis forense nos hemos basado en la norma UNE 71506 ya que se adapta perfectamente al contexto de leyes nacionales y legales en España. A continuación te dejo algunas de las razones más importantes:
 
 1) Metodología específica para un análisis forense digital. Ya que otras normas como ISO/IEC 27037:2012(E) y la NIST 800-86 proporcionan unos principios generales para el manejo de pruebas en cambio UNE 71506 ofrece una metodología más detallada y estructurada para un análisis forense.
 2) La norma UNE 71506 defiende una planificación  metodológica detallada y una secuencia temporal clara para cada fase del análisis, lo que permite la creación de registros auditable a lo largo de todo el proceso. Aunque la ISO/IEC 27037 también se ocupa de la preservación y análisis de la evidencia, la UNE 71506 ofrece un enfoque más integral para la documentación de todo el ciclo de vida de la evidencia
