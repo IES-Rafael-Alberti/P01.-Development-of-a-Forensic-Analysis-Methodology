@@ -1,6 +1,6 @@
 # Development of a Forensic Analysis Methodology
 
-Se nos ha encargado realizar nuestra propia metodología para el análisis forense digital. Durante este documento pasaremos por cuatro bloques donde analizaremos las normas existentes relacionadas con el análisis forense digital e intentaremos adaptarlas a nuestras necesidades.
+Se nos ha encargado realizar nuestra propia metodología para el análisis forense digital. Durante este documento pasaremos por cuatro bloques donde analizaremos las normas existentes relacionadas con el análisis forense digital e intentaremos adaptarlas a nuestras necesidades dando forma a una nueva metodología propia.
 
 ## Investigación de normas y estándares forenses
 Existen varias normativas que aluden al análisis forense digital, pero entre ellos destacan seis documentos que, aun tratando temas variados; engloban un contexto que nos puede ser útil para nuestra metodología. A continuación, hablaremos de ellos.
