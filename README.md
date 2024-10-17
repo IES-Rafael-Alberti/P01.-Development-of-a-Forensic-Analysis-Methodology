@@ -73,7 +73,7 @@ ___
 
 ### Preservación y almacenamiento de la evidencia
 
-Para la fase de prevención hemos seleccionado la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de laas evidencias que recopilaremos. 
+Para la fase de prevención hemos  nos basamos en la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de laas evidencias que recopilaremos. 
 
 Como factor fundamental nos comentan la importancia de preservar la información digital tal y como nos las encontramos originalmente (sin modificarlas), asegurando así su validez y confiabilidad. ¿Para qué es importante esto? Bueno, es especialmente importante cuando en un caso forense los datos se mantengan intactos, así garantizamos que cualquier análisis que se haga posteriormente puedan utilizar los mismos datos por si en algún momento se necesita un contraanalisis o alguna revisión.  
 Toda organización o empresa debe tener en consideración los siguientes principios al manejar datos o evidencias electrónicas que puedan ser sometidas a un análisis forense:
@@ -210,6 +210,42 @@ Luego decidir si realizar una adquisición o recolección dependiendo del estado
 
 ### Preservación y almacenamiento de la evidencia
 
+Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práctico poniendo ejemplos, sobre la preservación y almacenamiento de evidencias. Donde explica de manera esquemática como mantener la integridad de las evidencias digitales. 
+
++ Preservación de información digital. 
+
+    - Es clave mantener las evidencias recogidas en su estado orginal (sin ninguna modificación)
+    - Esto importante para garantizar y confiabilidad de los datos.
+    - Permiten posibles revisones de análisis 
+
++ Principios para manejo de evidencias digitales
+
+    - Estableceremos protocolos claros con el objetivo de proteger las evidencias de alteraciones intencionadas o accidentales.
+    - Prevención de situaciones: 
+        1. Manipulación intencionada (tampering). 
+        2. Descargas electroestáticas
+        3. Campos magnéticos
+        4. Conexión accidental a redes inalámbricas
+
++ Almacenamiento adecuando de evidencias
+
+    - Los técnicos deben almacenar evidencias en soporte adecuados para mantener la integridad. 
+    - Preservar otras pruebas en la evidencia:
+        1. Huellas dactilares
+        2. Restos orgánicos asociados al ADN (pelo, piel, etc.) 
+        3. Partículas diversas (polvo, fibras, etc.)
+
++ Equipamiento adecuado para los técnicos
+
+    - Indumentaria adecuada (evitar descargas electroestáticas)
+    - Evitar dispositivos que emitan radiofrecuencias (móviles u otros dispositivos que puedan emitir señales)
+    - Soporte aislado (cajas especiales que bloqueen interferencias externas como ondas de radio o campos electromagnéticos)
+
++ Pasos adicionales para la preservación de las evidencias
+
+    - Precintar y sellas evidencias (evitar la manipulación usando contenedores, cajas o bolsas selladas)
+    - Almacenamiento hasta el análisis (mantener protegidas las evidencias hasta el análisis)
+    - Atención a dispositivos que requieran energía (mantenerlos conectados para evitar la pérdida de datos)
 
 ### Análisis de la evidencia
 
