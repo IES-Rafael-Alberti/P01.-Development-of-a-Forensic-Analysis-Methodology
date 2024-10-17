@@ -52,6 +52,7 @@ ___
 Para la adquisición de evidencia digital hemos decidido basarnos en la norma ISO/IEC 27037:2012(E) ya que está diseñada para aplicarse en el ámbito internacional a diferencia de la UNE 71506 que se centra más en el ámbito español. Esto nos permitirá mantener nuestra metodología aunque trabajemos fuera del ámbito español.
 
 Durante la identificación de evidencias y la adquisición deberemos de ir rellenando nuestro acta de adquisición de evidencias digitales. Para ello usaremos el siguiente modelo:
+#### Acta de Adquisición de Evidencias Digitales
 | Acta de Adquisición de Evidencias Digitales |                                   |
 |---------------------------------------------|-----------------------------------|
 | **1. Información General**                  |                                   |
@@ -197,16 +198,13 @@ Para la parte general se tendrá en cuenta la norma UNE 197001, con la caracter�
 Una vez el informe pericial sea redactado se debe remitir al organismo solicitante del estudio los equipos y soportes digitales estudiados, acompañando del correspondiente recibo o documento de control de evidencias.Dicho recibo debe devolverse al organismo o empresa que lo emite, una vez haya llegado el informe y las muestras objeto de estudio al organismo o entiddad que lo solicitó, dando asi por finalizado la trazabilidad y proceso de custodia de las evidencias del análisis forense.
 ___
 ## Resumen de la metodología
-### Adquisición de evidencia digital
+### [Adquisición de evidencia digital](#adquisición-de-evidencia-digital)
 
-Primero identificar evidencias digitales y objetos relacionados fotografiándolos y anotando todo sobre ellos.
+[Acta de Adquisición de Evidencias Digitales](#acta-de-adquisición-de-evidencias-digitales)
 
-Luego decidir si realizar una adquisición o recolección dependiendo del estado de los dispositivos y si están encendidos o no.
-
-|                 | Dispositivo encendido | Dispositivo apagado |
-| :-------------: | :-------------------: | :-----------------: |
-| **Recolección** | 1. Adquisición de memoria volátil <br> 2. Apagarlo y desconectar batería si tiene <br> 3. Etiquetar, desconectar y asegurar cables <br> 4. Cinta sobre el botón de inicio y lector de CDs <br> 5. Almacenamiento y sellado| 1. Desconectar cable de corriente <br> 2. Etiquetar, desconectar y asegurar cables <br> 3. Cinta sobre el botón de inicio y lector de CDs <br> 4. Almacenamiento y sellado|
-| **Adquisición** | 1. Adquisición de la memoria volátil <br> 2. Adquisición de la memoria no volátil| 1. Asegurar que está apagado <br> 2. Desconectar dispositivo de almacenamiento <br> 3. Bloquear la escritura y realizar la imagen del dispositivo de almacenamiento <br> 4. Almacenamiento y sellado|
+| Dispositivo encendido | Dispositivo apagado |
+| :-------------------: | :-----------------: |
+| 1. Adquisición memoria volátil <br> 2. Adquisición memoria no volátil <br> 3. Apagar dispositivo <br> 4. Adquisición de cables <br> 5. Tapar botón de encendido y lector de CDs <br> 6. Almacenamiento | 1. Adquisición memoria no volátil <br> 2. Apagar dispositivo <br> 3. Adquisición de cables <br> 4. Tapar botón de encendido y lector de CDs <br> 5. Almacenamiento|
 
 ### Preservación y almacenamiento de la evidencia
 
