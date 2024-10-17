@@ -63,6 +63,13 @@ Ambas se centran en demostrar la existencia de datos en momento concreto con el 
 ### RFC 3227 y RFC 4810
 
 Aunque ambos RFCs tratan sobre la preservación de datos, el RFC 4810 tiene un enfoque diferente al del RFC 3227, ya que no se centra en la recolección de evidencia digital en un contexto inmediato, sino que trata el almacenamiento seguro y la recuperación de archivos digitales a largo plazo, enfocandose en la autenticidad y la disponibilidad a largo plazo.
+
+|          | Características principales |
+|:--------:|:---------------------------:|
+| **RFC 3227** | Recolección de evidencia digital en un contexto inmediato |
+| **RFC 4810** | Almacenamiento seguro y recuperación de archivos digitales a largo plazo |
+
+
 ___
 ## Desarrollo de metodología propia
 
