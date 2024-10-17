@@ -77,19 +77,32 @@ Para la fase de prevención hemos seleccionado la UNE 71506:2013. Consideramos q
 
 Como factor fundamental nos comentan la importancia de preservar la información digital tal y como nos las encontramos originalmente (sin modificarlas), asegurando así su validez y confiabilidad. ¿Para qué es importante esto? Bueno, es especialmente importante cuando en un caso forense los datos se mantengan intactos, así garantizamos que cualquier análisis que se haga posteriormente puedan utilizar los mismos datos por si en algún momento se necesita un contraanalisis o alguna revisión.  
 Toda organización o empresa debe tener en consideración los siguientes principios al manejar datos o evidencias electrónicas que puedan ser sometidas a un análisis forense:
-+ Se deben establecer protocolos claros y detallados para la protección de la evidencias digitales durante el análisis forense. Esto es para garantizar que no se altera la evidencia de niguna manera, ya sea de manera internacional o accidental. Estos nos pueden ayudar a prevenir situaciones como:
+1.  Se deben establecer protocolos claros y detallados para la protección de la evidencias digitales durante el análisis forense. Esto es para garantizar que no se altera la evidencia de niguna manera, ya sea de manera internacional o accidental. Estos nos pueden ayudar a prevenir situaciones como:  
     + Tampering (manipulación intencionado): evitamos que alguien manipule las evidencias de manera intencionada.
     + Descargas electroestáticas: proteger las evidencias de posibles descargas electroestáticas capaces de corromper los datos.
     + Campos magnéticos: proteger las evidencias de posibles campos electrmagnéticos capaces de alterar la información.
     + Conexión accidental a redes inalámbricas: evitamos que las evidencias se conecten a redes, lo que podría ocasionar la modificación de datos. 
-+ Los técnicos encargados de manejar las evidencias por primera vez deben tener extremo cuidado al almacenarlas en soportes correctamente adecuados. Esto es importante tanto para mantener la integridad de las evidencias como también para la preservación de otras pruebas que pueden estar presentes en las evidencias. A otras pruebas se refiere con:
+
+2. Los técnicos encargados de manejar las evidencias por primera vez deben tener extremo cuidado al almacenarlas en soportes correctamente adecuados. Esto es importante tanto para mantener la integridad de las evidencias como también para la preservación de otras pruebas que pueden estar presentes en las evidencias. A otras pruebas se refiere con:
     + Huellas dactilares: las impresiones de las huellas que han sido dejadas en los dispositivos.
     + Restos orgánicos asociados con el ADN: esto engloba a el material biológico, como puede ser pelo, piel, sudor..., que podrían contener información genética.
     + Partículas diversas: materiales o sustancias que pueden llegar a ser utiles en el análisis forense (como por ejemplo, polvo o fibras). 
-+ En este apartado se comenta la importancia de que el personal encargado de la manipulación de las evidencias debe portar una indumentaria y equipamiento adecuado para evitar posibles alteraciones accidentales de las evidencias. Entre esto destaca: 
+
+3. En este apartado se comenta la importancia de que el personal encargado de la manipulación de las evidencias debe portar una indumentaria y equipamiento adecuado para evitar posibles alteraciones accidentales de las evidencias. Entre esto destaca: 
     + Indumentaria adecuada: los técnicos deberán usar ropa que este especialmente diseñada para evitar descargas electroestáticas, las cuales podrían dañar los datos de las evidencias.
     + Evitar dispositivos que generen señales de radiofrecuencia: los técnicos no deberan llevar dispositivos consigo que emitan señales de radio como puede ser un móvil. Estas señales podrían interferir con la evidencia, pudiendo alterar datos.
     + Soportes aislados: en algunso casos, es necesario el uso de cajas especiales las cuales bloquean interferencias externas (como ondas de radio o campos electromagnéticos). Esto sirve para proteger los datos originales y evitar cualquier modificación de los datos.
+
+
+Simultaneamente, los técnicos a parte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
+
+1. Los técnicos deberan de seguir una premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
+
+    + Precintar y sellar las evidencias, tendremos que guardarlas en recipientes adecuados como pueden ser contenedores, cajas, bolsas... También deberán de estar selladas de una forma segura, garantizando así la no manipulación o alteración de las evidencias. 
+
+    + Almacenamiento hasta el análisis, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el analisis de los técnicos forenses.
+
+    + Atención especial para dispositivos que requieran de energía. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o moviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible perdida de datos. 
 
 
 ### Análisis de la evidencia
