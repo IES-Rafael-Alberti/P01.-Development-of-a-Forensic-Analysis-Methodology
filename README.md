@@ -34,6 +34,9 @@ ___
 ## Comparativa de las normas y estándares
 
 
+### RFC 3227 y 4810
+
+Aunque ambos RFCs tratan sobre la preservación de datos, el RFC 4810 tiene un enfoque diferente al del RFC 3227, ya que no se centra en la recolección de evidencia digital en un contexto inmediato, sino que trata el almacenamiento seguro y la recuperación de archivos digitales a largo plazo, enfocandose en la autenticidad y la disponibilidad a largo plazo.
 ___
 ## Desarrollo de metodología propia
 
