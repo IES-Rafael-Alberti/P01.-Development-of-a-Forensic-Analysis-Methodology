@@ -96,13 +96,16 @@ Como factor fundamental nos comentan la importancia de preservar la información
 
 Simultaneamente, los técnicos a parte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
 
-1. Los técnicos deberan de seguir una premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
+Los técnicos deberan de seguir una premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
 
-    + **Precintar y sellar las evidencias**, tendremos que guardarlas en recipientes adecuados como pueden ser contenedores, cajas, bolsas... También deberán de estar selladas de una forma segura, garantizando así la no manipulación o alteración de las evidencias. 
++ **Precintar y sellar las evidencias**, tendremos que guardarlas en recipientes adecuados como pueden ser contenedores, cajas, bolsas... También deberán de estar selladas de una forma segura, garantizando así la no manipulación o alteración de las evidencias. 
 
-    + **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el analisis de los técnicos forenses.
++ **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el analisis de los técnicos forenses.
 
-    + **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o moviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible perdida de datos. 
++ **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o moviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible perdida de datos.   
+
+A continuación hemos creado un informe donde quedara por escrito la información de importancia en la cadena de custodia. Esta cadena hace refenrencia al proceso por el que pasan las evidencias desde que se ha llevado la adquisición.  
+En este proceso se recoge a quien se entrega las evidencias, datos sobre la misma, si se crean copias de las evidencias, comprobaciones de hash, etc. Esto más que nada es para llevar un registro y preservar la integridad de las mismas, debido a que si en algún momento existe cualquier alteración de los datos se sepa en que parte de la cadena ha ocurrido. 
 
 ## CADENA DE CUSTODIA
 |  |  |  |
@@ -122,8 +125,6 @@ Simultaneamente, los técnicos a parte de seguir los principios antes mencionado
 | Tipo de Dispositivo | [Ej. Disco duro, USB, tarjeta SD] |
 | Marca y Modelo | [Especificar] |
 | Número de Serie | [Especificar] |
-| Capacidad | [Ej. 1TB] |
-| Estado Físico | [Describir cualquier daño visible] |
 | Hash de la Evidencia Original | [MD5 y SHA-256] |
 |  |  |
 | **3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL** |  |  |
@@ -163,6 +164,7 @@ Simultaneamente, los técnicos a parte de seguir los principios antes mencionado
 | Coincide con Original (Acceso) | [Sí/No] |
 | Firma (Acceso) | [Firma] |
 
+Este documento nos servirá para continuar con la metodología que hemos escogido. 
 
 ### Análisis de la evidencia
 
@@ -267,44 +269,22 @@ Luego decidir si realizar una adquisición o recolección dependiendo del estado
 | **Recolección** | 1. Adquisición de memoria volátil <br> 2. Apagarlo y desconectar batería si tiene <br> 3. Etiquetar, desconectar y asegurar cables <br> 4. Cinta sobre el botón de inicio y lector de CDs <br> 5. Almacenamiento y sellado| 1. Desconectar cable de corriente <br> 2. Etiquetar, desconectar y asegurar cables <br> 3. Cinta sobre el botón de inicio y lector de CDs <br> 4. Almacenamiento y sellado|
 | **Adquisición** | 1. Adquisición de la memoria volátil <br> 2. Adquisición de la memoria no volátil| 1. Asegurar que está apagado <br> 2. Desconectar dispositivo de almacenamiento <br> 3. Bloquear la escritura y realizar la imagen del dispositivo de almacenamiento <br> 4. Almacenamiento y sellado|
 
-### Preservación y almacenamiento de la evidencia
+### [Preservación y almacenamiento de la evidencia](#preservación-y-almacenamiento-de-la-evidencia)
 
-Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práctico poniendo ejemplos, sobre la preservación y almacenamiento de evidencias. Donde explica de manera esquemática como mantener la integridad de las evidencias digitales. 
+La fase de preservación se basa en la UNE 71506:2013, que ofrece un enfoque detallado para mantener la integridad de las evidencias digitales. Es crucial preservar la información tal como se encuentra originalmente, asegurando su validez y confiabilidad para análisis posteriores y posibles contraanálisis.
 
-+ **Preservación de información digital.**
+Hemos creado una parte del informe centrado en la [cadena de custodia](#cadena-de-custodia).
 
-    - Es clave mantener las evidencias recogidas en su estado orginal (sin ninguna modificación)
-    - Esto importante para garantizar y confiabilidad de los datos.
-    - Permiten posibles revisones de análisis 
+| Sección | Título |
+|---------|--------|
+| 1       | INFORMACIÓN DEL CASO |
+| 2       | DESCRIPCIÓN EVIDENCIA EN ORIGINAL |
+| 3       | PRESERVACIÓN DE LA EVIDENCIA ORIGINAL |
+| 4       | CREACIÓN Y VERIFICACIÓN DE COPIAS |
+| 5       | REGISTRO DE ACCESOS Y VERIFICACIONES |
 
-+ **Principios para manejo de evidencias digitales**
+Esta tabla proporciona una visión general de las principales secciones de la cadena de custodia, facilitando una rápida referencia a los aspectos clave del proceso de preservación de evidencias digitales.
 
-    - Estableceremos protocolos claros con el objetivo de proteger las evidencias de alteraciones intencionadas o accidentales.
-    - Prevención de situaciones: 
-        1. Manipulación intencionada (tampering). 
-        2. Descargas electroestáticas
-        3. Campos magnéticos
-        4. Conexión accidental a redes inalámbricas
-
-+ **Almacenamiento adecuando de evidencias**
-
-    - Los técnicos deben almacenar evidencias en soporte adecuados para mantener la integridad. 
-    - Preservar otras pruebas en la evidencia:
-        1. Huellas dactilares
-        2. Restos orgánicos asociados al ADN (pelo, piel, etc.) 
-        3. Partículas diversas (polvo, fibras, etc.)
-
-+ **Equipamiento adecuado para los técnicos**
-
-    - Indumentaria adecuada (evitar descargas electroestáticas)
-    - Evitar dispositivos que emitan radiofrecuencias (móviles u otros dispositivos que puedan emitir señales)
-    - Soporte aislado (cajas especiales que bloqueen interferencias externas como ondas de radio o campos electromagnéticos)
-
-+ **Pasos adicionales para la preservación de las evidencias**
-
-    - Precintar y sellas evidencias (evitar la manipulación usando contenedores, cajas o bolsas selladas)
-    - Almacenamiento hasta el análisis (mantener protegidas las evidencias hasta el análisis)
-    - Atención a dispositivos que requieran energía (mantenerlos conectados para evitar la pérdida de datos)
 
 ### Análisis de la evidencia
 
