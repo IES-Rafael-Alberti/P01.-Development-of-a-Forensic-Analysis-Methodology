@@ -295,16 +295,12 @@ Para realizar un buen análisis forense nos hemos basado en la norma UNE 71506 y
 
 | Sección | Contenido |
 |---------|-----------|
-| **Información General** | **Caso**: [Número de caso]<br>**Fecha**: [Fecha actual]<br>**Analista**: [Nombre del analista] |
-| **1. Documento de Recepción de Evidencias/Muestras Electrónicas** | **Fecha y hora de recepción**: [Fecha y hora]<br>**Número de referencia**: [Número único de referencia]<br>**Solicitud del análisis**: [Nombre y cargo]<br>**Motivo del análisis**: [Breve descripción del caso]<br><br>**Evidencias recibidas**:<br>Evidencia 1: [Descripción breve de la evidencia 1]<br>Evidencia 2: [Descripción breve de la evidencia 2] |
-| **2. Registro de Documentación Recibida** | - Descripción detallada de las evidencias electrónicas<br>- Informe de la cadena de custodia<br>- Solicitud formal de estudios a realizar<br>- Autorizaciones legales para el análisis |
-| **3. Registro de Reseña de las Evidencias Electrónicas** | **Evidencia 1**: [Nombre/Número de referencia]<br>**Tipo de dispositivo**: [Ej. Disco duro externo]<br>**Marca y modelo**: [Detalles]<br>**Número de serie**: [Número]<br>**Capacidad**: [Ej. 1 TB]<br>**Estado físico**: [Ej. Sin daños aparentes]<br>**Observaciones adicionales**: [Cualquier detalle relevante]<br><br>**Evidencia 2**: [Repetir el proceso para cada evidencia] |
-| **4. Registro del Tratamiento Inicial** | **Herramienta utilizada**: [Ej. FTK Imager]<br>**Fecha y hora de inicio**: [Fecha y hora]<br>**Fecha y hora de finalización**: [Fecha y hora]<br>**Hash de la imagen original**: [Valor hash]<br>**Hash de la copia forense**: [Valor hash]<br>**Observaciones**: [Cualquier incidencia o detalle relevante] |
-| **5. Registro de Situación de Evidencias/Muestras** | **Evidencia 1**: [Nombre/Número de referencia]<br>**Ubicación actual**: [Ej. Laboratorio forense, armario de seguridad]<br>**Estado actual**: [Ej. En análisis, En espera, Análisis completado]<br><br>**Operaciones realizadas**:<br>[Fecha/hora] - [Operación] - [Responsable]<br>[Fecha/hora] - [Operación] - [Responsable] |
-| **6. Registro de Tareas del Análisis Inicial** | **Tarea 1**:<br>Descripción: [Descripción breve]<br>Inicio: [Fecha y hora]<br>Finalización: [Fecha y hora]<br>Hallazgos preliminares: [Resumen breve]<br><br>**Tarea 2**:<br>Descripción: [Descripción breve]<br>Inicio: [Fecha y hora]<br>Finalización: [Fecha y hora]<br>Hallazgos preliminares: [Resumen breve] |
-| **7. Registro de Tareas del Análisis de Datos Definitivo** | **Tarea 1**:<br>Descripción: [Descripción detallada]<br>Inicio: [Fecha y hora]<br>Finalización: [Fecha y hora]<br>Herramientas utilizadas: [Lista de herramientas]<br>Hallazgos: [Descripción detallada hallazgos]<br>Ubicación temporal evidencia: [Si aplicable]<br><br>**Tarea 2**: [Repetir para cada tarea del análisis definitivo] |
-| **Conclusiones Preliminares** | [Breve resumen de los hallazgos más significativos y su relevancia para el caso] |
-| **Firma del Analista** | [Nombre del Analista]<br>[Firma]<br>[Fecha] |
+|  Información General | **Caso**: [Número de caso]<br>**Fecha**: [Fecha actual]<br>**Analista**: [Nombre del analista] |
+|  1. Documento de Recepción de Evidencias/Muestras Electrónicas | **Fecha y hora de recepción**: [Fecha y hora]<br>**Número de referencia**: [Número único de referencia]<br>**Solicitud del análisis**: [Nombre y cargo]<br>**Motivo del análisis**: [Breve descripción del caso]<br><br>**Evidencias recibidas**:<br>Evidencia 1: [Descripción breve de la evidencia 1]<br>Evidencia 2: [Descripción breve de la evidencia 2] |
+|  2. Registro de Documentación Recibida | - Descripción detallada de las evidencias electrónicas<br>- Informe de la cadena de custodia<br>- Solicitud formal de estudios a realizar<br>- Autorizaciones legales para el análisis |
+|  3. Registro de Reseña de las Evidencias Electrónicas | **Evidencia 1**: [Nombre/Número de referencia]<br>**Tipo de dispositivo**: [Ej. Disco duro externo]<br>**Marca y modelo**: [Detalles]<br>**Número de serie**: [Número]<br>**Capacidad**: [Ej. 1 TB]<br>**Estado físico**: [Ej. Sin daños aparentes]<br>**Observaciones adicionales**: [Cualquier detalle relevante]<br><br>**Evidencia 2**: [Repetir el proceso para cada evidencia] |
+|  4. Registro del Tratamiento Inicial | **Herramienta utilizada**: [Ej. FTK Imager]<br>**Fecha y hora de inicio**: [Fecha y hora]<br>**Fecha y hora de finalización**: [Fecha y hora]<br>**Hash de la imagen original**: [Valor hash]<br>**Hash de la copia forense**: [Valor hash]<br>**Observaciones**: [Cualquier incidencia o detalle relevante] |
+|  5. Registro de Situación de Evidencias/Muestras | **Evidencia 1**: [Nombre/Número de referencia]<br>**Ubicación actual**: [Ej. Laboratorio forense, armario de seguridad]<br>**Estado actual**: [Ej. En análisis, En espera, Análisis completado]<br><br>
 
 ### Presentación de resultados
 Hemos seleccionado el UNE 71506 ya te permite asegurar el cumplimiento de las normativas nacionales, lo cual es muy importante para los procedimientos legales en España. Si bien otras normas como la ISO/IEC 27037:2012(E) o la NIST SP 800-86 ofrecen buenas indicaciones, su enfoque internacional no se alinea tan directamente con las necesidades específicas de un proceso forense en España.Aquí tenemos un acta de ejemplo de como se deberían presentar las pruebas para un análisis forense.
@@ -417,11 +413,11 @@ Esta tabla proporciona una visión general de las principales secciones de la ca
 | **[Estudio de la seguridad implementada](#estudio-de-la-seguridad-implementada)** | - Evaluar compromiso de evidencias<br>- Identificar malware<br>- Evaluar impacto en el sistema |
 | **[Análisis detallado de los datos obtenidos](#análisis-detallado-de-los-datos-obtenidos)** | 1. Información del sistema<br>2. Dispositivos conectados<br>3. Escritorio y papelera<br>4. Conexiones de red<br>5. Comunicaciones<br>6. Registros del sistema<br>7. Espacios no asignados<br>8. Archivos de sistema<br>9. Cola de impresión<br>10. Enlaces recientes<br>11. Carpetas de usuarios<br>12. Programas instalados<br>13. Metadatos<br>14. Aplicaciones de virtualización<br>15. Bases de datos<br>16. Archivos cifrados<br>17. Navegación por Internet<br>18. Correos electrónicos<br>19. Registros de mensajería |
 
-### Documentación de hallazgos
+### [Documentación de hallazgos](#documentación-de-hallazgos)
 
 1. Se basa en la norma UNE 71506, adaptada al contexto legal español.
-2. Incluye un acta de documentación de hallazgos con las siguientes secciones:
-   - **Información General**
+2. [Incluye un acta de documentación de hallazgos con las siguientes secciones:](#acta-de-documentación-de-hallazgos---análisis-forense-digital)
+   - _**Información General**
    - **Documento de Recepción de Evidencias/Muestras Electrónicas**
    - **Registro de Documentación Recibida**
    - **Registro de Reseña de las Evidencias Electrónicas**
@@ -434,10 +430,10 @@ Esta tabla proporciona una visión general de las principales secciones de la ca
 
 3. Cada sección contiene campos específicos para detallar la información relevante del análisis forense.
 
-### Presentación de resultados
+### [Presentación de resultados](#presentación-de-resultados)
 
 1. Se utiliza la norma UNE 71506 para asegurar el cumplimiento de normativas nacionales en España.
-2. Se presenta un acta de presentación de pruebas con las siguientes secciones:
+2. [Se presenta un acta de presentación de pruebas con las siguientes secciones:](#acta-de-presentación-de-pruebas---análisis-forense)
    - **Información General**
    - **Asunto**
    - **Evidencias/Muestras Recibidas**
@@ -447,7 +443,6 @@ Esta tabla proporciona una visión general de las principales secciones de la ca
    - **Anexos del Informe**
    - **Declaración de Conformidad**
    - **Entrega y Custodia de Evidencias**
-
 3. El formato es más conciso y orientado a la presentación de resultados.
 4. Se adjunta un recibo de control de evidencias para su devolución firmada.
 
