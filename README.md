@@ -395,6 +395,5 @@ Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práct
    - **Anexos del Informe**
    - **Declaración de Conformidad**
    - **Entrega y Custodia de Evidencias**
-
 3. El formato es más conciso y orientado a la presentación de resultados.
 4. Se adjunta un recibo de control de evidencias para su devolución firmada.
