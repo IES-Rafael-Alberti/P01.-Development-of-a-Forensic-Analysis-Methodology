@@ -136,10 +136,10 @@ Deberemos de actuar de distinta manera dependiendo de si el dispositivo se encue
 
 ### Preservación y almacenamiento de la evidencia
 
-Para la fase de prevención hemos  nos basamos en la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de laas evidencias que recopilaremos. 
+Para la fase de preservación nos hemos basamos en la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de laas evidencias que recopilaremos. 
 
 Como factor fundamental nos comentan la importancia de preservar la información digital tal y como nos las encontramos originalmente (sin modificarlas), asegurando así su validez y confiabilidad. ¿Para qué es importante esto? Bueno, es especialmente importante cuando en un caso forense los datos se mantengan intactos, así garantizamos que cualquier análisis que se haga posteriormente puedan utilizar los mismos datos por si en algún momento se necesita un contraanalisis o alguna revisión.  
-Toda organización o empresa debe tener en consideración los siguientes principios al manejar datos o evidencias electrónicas que puedan ser sometidas a un análisis forense:
+<!-- Toda organización o empresa debe tener en consideración los siguientes principios al manejar datos o evidencias electrónicas que puedan ser sometidas a un análisis forense:
 1.  Se deben establecer protocolos claros y detallados para la protección de la evidencias digitales durante el análisis forense. Esto es para garantizar que no se altera la evidencia de niguna manera, ya sea de manera internacional o accidental. Estos nos pueden ayudar a prevenir situaciones como:  
     + **Tampering** (manipulación intencionado): evitamos que alguien manipule las evidencias de manera intencionada.
     + **Descargas electroestáticas**: proteger las evidencias de posibles descargas electroestáticas capaces de corromper los datos.
@@ -154,17 +154,79 @@ Toda organización o empresa debe tener en consideración los siguientes princip
 3. En este apartado se comenta la importancia de que el personal encargado de la manipulación de las evidencias debe portar una indumentaria y equipamiento adecuado para evitar posibles alteraciones accidentales de las evidencias. Entre esto destaca: 
     + **Indumentaria adecuada**: los técnicos deberán usar ropa que este especialmente diseñada para evitar descargas electroestáticas, las cuales podrían dañar los datos de las evidencias.
     + **Evitar dispositivos que generen señales de radiofrecuencia**: los técnicos no deberan llevar dispositivos consigo que emitan señales de radio como puede ser un móvil. Estas señales podrían interferir con la evidencia, pudiendo alterar datos.
-    + **Soportes aislados**: en algunso casos, es necesario el uso de cajas especiales las cuales bloquean interferencias externas (como ondas de radio o campos electromagnéticos). Esto sirve para proteger los datos originales y evitar cualquier modificación de los datos.
+    + **Soportes aislados**: en algunso casos, es necesario el uso de cajas especiales las cuales bloquean interferencias externas (como ondas de radio o campos electromagnéticos). Esto sirve para proteger los datos originales y evitar cualquier modificación de los datos. -->
 
-Simultáneamente, los técnicos aparte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
+Simultaneamente, los técnicos a parte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
 
-1. Los técnicos deberán de seguir unas premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
+Los técnicos deberan de seguir una premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
 
-    + **Precintar y sellar las evidencias**, tendremos que guardarlas en recipientes adecuados como pueden ser contenedores, cajas, bolsas... También deberán de estar selladas de una forma segura, garantizando así la no manipulación o alteración de las evidencias. 
++ **Precintar y sellar las evidencias**, tendremos que guardarlas en recipientes adecuados como pueden ser contenedores, cajas, bolsas... También deberán de estar selladas de una forma segura, garantizando así la no manipulación o alteración de las evidencias. 
 
-    + **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el análisis de los técnicos forenses.
++ **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el analisis de los técnicos forenses.
 
-    + **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o móviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible pérdida de datos. 
++ **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o moviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible perdida de datos.   
+
+A continuación hemos creado un informe donde quedara por escrito la información de importancia en la cadena de custodia. Esta cadena hace refenrencia al proceso por el que pasan las evidencias desde que se ha llevado la adquisición.  
+En este proceso se recoge a quien se entrega las evidencias, datos sobre la misma, si se crean copias de las evidencias, comprobaciones de hash, etc. Esto más que nada es para llevar un registro y preservar la integridad de las mismas, debido a que si en algún momento existe cualquier alteración de los datos se sepa en que parte de la cadena ha ocurrido. 
+
+## CADENA DE CUSTODIA
+|  |  |  |
+|-------------|-----------|-----------|
+|  |  |
+| **1. INFORMACIÓN DEL CASO** |  |  |
+| **Campo** | **Valor** |  |
+|  |  |
+| Número de Caso | [Insertar número] |
+| Tipo de Investigación | [Especificar] |
+| Fecha de Adquisición | [DD/MM/AAAA] |
+| Lugar de Adquisición | [Dirección completa] |
+|  |  |
+| **2. DESCRIPCIÓN EVIDENCIA EN ORIGINAL** |  |  |
+| **Campo** | **Valor** |  |
+|  |  |
+| Tipo de Dispositivo | [Ej. Disco duro, USB, tarjeta SD] |
+| Marca y Modelo | [Especificar] |
+| Número de Serie | [Especificar] |
+| Hash de la Evidencia Original | [MD5 y SHA-256] |
+|  |  |
+| **3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL** |  |  |
+| **Campo** | **Valor** |  |
+|  |  |
+| Fecha de Entrega al Juzgado | [DD/MM/AAAA] |
+| Hora de Entrega | [HH:MM] |
+| Recibido por | [Nombre y cargo del funcionario judicial] |
+| Ubicación en el Juzgado | [Especificar] |
+| Firma del Funcionario Judicial | ________________________ |
+|  |  |
+| **4. CREACIÓN Y VERIFICACIÓN DE COPIAS** |  |  |
+| **Campo** | **Valor** |  |
+|  |  |
+| Fecha y Hora de Creación (Defensa) | [DD/MM/AAAA, HH:MM] |
+| Técnico Responsable (Defensa) | [Nombre y cargo] |
+| Hash de la Copia (Defensa) | [MD5 y SHA-256] |
+| Verificación de Integridad (Defensa) | [Confirmar que coincide con el original] |
+| Entregado a (Defensa) | [Nombre del representante de la defensa] |
+| Fecha y Hora de Entrega (Defensa) | [DD/MM/AAAA, HH:MM] |
+| Firma del Receptor (Defensa) | ________________________ |
+| Fecha y Hora de Creación (Fiscalía) | [DD/MM/AAAA, HH:MM] |
+| Técnico Responsable (Fiscalía) | [Nombre y cargo] |
+| Hash de la Copia (Fiscalía) | [MD5 y SHA-256] |
+| Verificación de Integridad (Fiscalía) | [Confirmar que coincide con el original] |
+| Entregado a (Fiscalía) | [Nombre del representante de la fiscalía] |
+| Fecha y Hora de Entrega (Fiscalía) | [DD/MM/AAAA, HH:MM] |
+| Firma del Receptor (Fiscalía) | ________________________ |
+|  |  |
+| **5. REGISTRO DE ACCESOS Y VERIFICACIONES** |  |  |
+| **Campo** | **Valor** |  |
+|  |  |
+| Fecha y Hora (Acceso) | [DD/MM/AAAA, HH:MM] |
+| Parte Accediendo (Acceso) | [Defensa/Fiscalía] |
+| Propósito (Acceso) | [Ej. Análisis] |
+| Hash Verificado (Acceso) | [MD5/SHA-256] |
+| Coincide con Original (Acceso) | [Sí/No] |
+| Firma (Acceso) | [Firma] |
+
+Este documento nos servirá para continuar con la metodología que hemos escogido.
 
 ### Análisis de la evidencia
 
@@ -326,44 +388,23 @@ Una vez realizada nuestra metodología, esquematizaremos las partes que la compo
 | :-------------------: | :-----------------: |
 | 1. Adquisición memoria volátil <br> 2. Adquisición memoria no volátil <br> 3. Apagar dispositivo <br> 4. Adquisición de cables <br> 5. Tapar botón de encendido y lector de CDs <br> 6. Almacenamiento | 1. Adquisición memoria no volátil <br> 2. Apagar dispositivo <br> 3. Adquisición de cables <br> 4. Tapar botón de encendido y lector de CDs <br> 5. Almacenamiento|
 
-### Preservación y almacenamiento de la evidencia
 
-Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práctico poniendo ejemplos, sobre la preservación y almacenamiento de evidencias. Donde explica de manera esquemática como mantener la integridad de las evidencias digitales. 
+### [Preservación y almacenamiento de la evidencia](#preservación-y-almacenamiento-de-la-evidencia)
 
-+ **Preservación de información digital.**
+La fase de preservación se basa en la UNE 71506:2013, que ofrece un enfoque detallado para mantener la integridad de las evidencias digitales. Es crucial preservar la información tal como se encuentra originalmente, asegurando su validez y confiabilidad para análisis posteriores y posibles contraanálisis.
 
-    - Es clave mantener las evidencias recogidas en su estado original (sin ninguna modificación)
-    - Esto importante para garantizar y confiabilidad de los datos.
-    - Permiten posibles revisiones de análisis 
+Hemos creado una parte del informe centrado en la [cadena de custodia](#cadena-de-custodia).
 
-+ **Principios para manejo de evidencias digitales**
+| Sección | Título |
+|---------|--------|
+| 1       | INFORMACIÓN DEL CASO |
+| 2       | DESCRIPCIÓN EVIDENCIA EN ORIGINAL |
+| 3       | PRESERVACIÓN DE LA EVIDENCIA ORIGINAL |
+| 4       | CREACIÓN Y VERIFICACIÓN DE COPIAS |
+| 5       | REGISTRO DE ACCESOS Y VERIFICACIONES |
 
-    - Estableceremos protocolos claros con el objetivo de proteger las evidencias de alteraciones intencionadas o accidentales.
-    - Prevención de situaciones: 
-        1. Manipulación intencionada (tampering). 
-        2. Descargas electroestáticas
-        3. Campos magnéticos
-        4. Conexión accidental a redes inalámbricas
+Esta tabla proporciona una visión general de las principales secciones de la cadena de custodia, facilitando una rápida referencia a los aspectos clave del proceso de preservación de evidencias digitales.
 
-+ **Almacenamiento adecuando de evidencias**
-
-    - Los técnicos deben almacenar evidencias en soporte adecuados para mantener la integridad. 
-    - Preservar otras pruebas en la evidencia:
-        1. Huellas dactilares
-        2. Restos orgánicos asociados al ADN (pelo, piel, etc.) 
-        3. Partículas diversas (polvo, fibras, etc.)
-
-+ **Equipamiento adecuado para los técnicos**
-
-    - Indumentaria adecuada (evitar descargas electroestáticas)
-    - Evitar dispositivos que emitan radiofrecuencias (móviles u otros dispositivos que puedan emitir señales)
-    - Soporte aislado (cajas especiales que bloqueen interferencias externas como ondas de radio o campos electromagnéticos)
-
-+ **Pasos adicionales para la preservación de las evidencias**
-
-    - Precintar y sellas evidencias (evitar la manipulación usando contenedores, cajas o bolsas selladas)
-    - Almacenamiento hasta el análisis (mantener protegidas las evidencias hasta el análisis)
-    - Atención a dispositivos que requieran energía (mantenerlos conectados para evitar la pérdida de datos)
 
 ### [Análisis de la evidencia](#análisis-de-la-evidencia)
 
