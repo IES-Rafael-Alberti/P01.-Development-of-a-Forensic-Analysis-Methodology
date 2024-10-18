@@ -181,35 +181,89 @@ El análisis debe incluir:
 
 ### Documentación de hallazgos
 
-Para realizar un buen análisis forense nos hemos basado en la norma UNE 71506 ya que se adapta perfectamente al contexto de leyes nacionales y legales en España. A continuación te dejo algunas de las razones más importantes:
+Para realizar un buen análisis forense nos hemos basado en la norma UNE 71506 ya que se adapta perfectamente al contexto de leyes nacionales y legales en España. A continuación le dejo un ejemplo de como se debería hacer un acta de documentación de hallazgos:
+#### Acta de Documentación de Hallazgos - Análisis Forense Digital
 
-1) Metodología específica para un análisis forense digital. Ya que otras normas como ISO/IEC 27037:2012(E) y la NIST 800-86 proporcionan unos principios generales para el manejo de pruebas en cambio UNE 71506 ofrece una metodología más detallada y estructurada para un análisis forense.
-2) La norma UNE 71506 defiende una planificación  metodológica detallada y una secuencia temporal clara para cada fase del análisis, lo que permite la creación de registros auditable a lo largo de todo el proceso. Aunque la ISO/IEC 27037 también se ocupa de la preservación y análisis de la evidencia, la UNE 71506 ofrece un enfoque más integral para la documentación de todo el ciclo de vida de la evidencia
+| Sección | Contenido |
+|---------|-----------|
+| **Información General** | **Caso**: [Número de caso]<br>**Fecha**: [Fecha actual]<br>**Analista**: [Nombre del analista] |
+| **1. Documento de Recepción de Evidencias/Muestras Electrónicas** | **Fecha y hora de recepción**: [Fecha y hora]<br>**Número de referencia**: [Número único de referencia]<br>**Solicitud del análisis**: [Nombre y cargo]<br>**Motivo del análisis**: [Breve descripción del caso]<br><br>**Evidencias recibidas**:<br>Evidencia 1: [Descripción breve de la evidencia 1]<br>Evidencia 2: [Descripción breve de la evidencia 2] |
+| **2. Registro de Documentación Recibida** | - Descripción detallada de las evidencias electrónicas<br>- Informe de la cadena de custodia<br>- Solicitud formal de estudios a realizar<br>- Autorizaciones legales para el análisis |
+| **3. Registro de Reseña de las Evidencias Electrónicas** | **Evidencia 1**: [Nombre/Número de referencia]<br>**Tipo de dispositivo**: [Ej. Disco duro externo]<br>**Marca y modelo**: [Detalles]<br>**Número de serie**: [Número]<br>**Capacidad**: [Ej. 1 TB]<br>**Estado físico**: [Ej. Sin daños aparentes]<br>**Observaciones adicionales**: [Cualquier detalle relevante]<br><br>**Evidencia 2**: [Repetir el proceso para cada evidencia] |
+| **4. Registro del Tratamiento Inicial** | **Herramienta utilizada**: [Ej. FTK Imager]<br>**Fecha y hora de inicio**: [Fecha y hora]<br>**Fecha y hora de finalización**: [Fecha y hora]<br>**Hash de la imagen original**: [Valor hash]<br>**Hash de la copia forense**: [Valor hash]<br>**Observaciones**: [Cualquier incidencia o detalle relevante] |
+| **5. Registro de Situación de Evidencias/Muestras** | **Evidencia 1**: [Nombre/Número de referencia]<br>**Ubicación actual**: [Ej. Laboratorio forense, armario de seguridad]<br>**Estado actual**: [Ej. En análisis, En espera, Análisis completado]<br><br>**Operaciones realizadas**:<br>[Fecha/hora] - [Operación] - [Responsable]<br>[Fecha/hora] - [Operación] - [Responsable] |
+| **6. Registro de Tareas del Análisis Inicial** | **Tarea 1**:<br>Descripción: [Descripción breve]<br>Inicio: [Fecha y hora]<br>Finalización: [Fecha y hora]<br>Hallazgos preliminares: [Resumen breve]<br><br>**Tarea 2**:<br>Descripción: [Descripción breve]<br>Inicio: [Fecha y hora]<br>Finalización: [Fecha y hora]<br>Hallazgos preliminares: [Resumen breve] |
+| **7. Registro de Tareas del Análisis de Datos Definitivo** | **Tarea 1**:<br>Descripción: [Descripción detallada]<br>Inicio: [Fecha y hora]<br>Finalización: [Fecha y hora]<br>Herramientas utilizadas: [Lista de herramientas]<br>Hallazgos: [Descripción detallada hallazgos]<br>Ubicación temporal evidencia: [Si aplicable]<br><br>**Tarea 2**: [Repetir para cada tarea del análisis definitivo] |
+| **Conclusiones Preliminares** | [Breve resumen de los hallazgos más significativos y su relevancia para el caso] |
+| **Firma del Analista** | [Nombre del Analista]<br>[Firma]<br>[Fecha] |
+ 
 
-Aquí dejamos cómo deberiamos documentar un análisis forense.
-
-+ Un documento de recepción de evidencias/muestras electrónicas. Mediante este registro, se lleva el control de entrada de peticiones del análisis, así como de las evidencias a estudiar.
-+ Un registro de la documentación recibida. Los documentos que deben acompañar a una evidencia digital pueden ser los siguientes:
-    + Descripción de las evidencias electrónicas.
-    + Reseña de la cadena de custodia hasta la llegada de las mismas al entorno de análisis forense.
-    + Estudios solicitados en dicho análisis.
-    + Permisos necesarios para la realización de los estudios solicitados.
-+ Registro de reseña de las evidencias electrónicas. Este documento describe de forma detallada y completa tanto la evidencia digital como el estado en el que se encuentra en el momento de la recepción.
-+ Registro del tratamiento inicial: Se debe detallar el proceso de volcado forense de datos o la realización de la imagen correspondiente.
-+ Registro de situación de evidencias/muestras. Este documento debe reflejar las operaciones llevadas a cabo sobre una evidencia digital, dónde se realizan estas operaciones, por quién y el momento temporal en que se efectúan.
-+ Registro de tareas del análisis inicial.
-+ Registro de tareas del análisis de datos definitivo con la expresión temporal de los distintos procesos que se lleven a cabo, así como de la ubicación temporal de la evidencia si se paraliza temporalmente el estudio de la misma.
 ### Presentación de resultados
-Hemos seleccionado el UNE 71506 ya te permite asegurar el cumplimiento de las normativas nacionales, lo cual es muy importante para los procedimientos legales en España.Si bien otras normas como la ISO/IEC 27037:2012(E) o la NIST SP 800-86 ofrecen buenas indicaciones, su enfoque internacional no se alinea tan directamente con las necesidades específicas de un proceso forense en España.
+Hemos seleccionado el UNE 71506 ya te permite asegurar el cumplimiento de las normativas nacionales, lo cual es muy importante para los procedimientos legales en España. Si bien otras normas como la ISO/IEC 27037:2012(E) o la NIST SP 800-86 ofrecen buenas indicaciones, su enfoque internacional no se alinea tan directamente con las necesidades específicas de un proceso forense en España.Aquí tenemos un acta de ejemplo de como se deberían presentar las pruebas para un análisis forense.
 
-Las RFC, por su parte, son demasiado técnicas y específicas, mientras que la UNE 71506 abarca el proceso completo del análisis forense desde la identificación hasta la presentación en un contexto forense legal español.
+#### Acta de Presentación de Pruebas - Análisis Forense
 
-Para la realización de la presentación se debe materializar en un informe pericial, el cual debe acompañar los términos técnicos con un lenguaje fácil de comprender dirigiddo al organismo o entidad que solicita ese estudio.
-El término *informe pericial* se considera equivalente al término *informe técnico-forense*.
+#### Información General
 
-Para la parte general se tendrá en cuenta la norma UNE 197001, con la característica de que en este caso, su contenido trata sobre aspectos técnicos propios de las tecnologías de la información.
+| Campo | Descripción |
+|-------|-------------|
+| Número de Caso | [Insertar número] |
+| Fecha del Informe | [Insertar fecha] |
+| Perito Informático | [Nombre del perito] |
+| Organismo Solicitante | [Nombre del organismo] |
 
-Una vez el informe pericial sea redactado se debe remitir al organismo solicitante del estudio los equipos y soportes digitales estudiados, acompañando del correspondiente recibo o documento de control de evidencias.Dicho recibo debe devolverse al organismo o empresa que lo emite, una vez haya llegado el informe y las muestras objeto de estudio al organismo o entiddad que lo solicitó, dando asi por finalizado la trazabilidad y proceso de custodia de las evidencias del análisis forense.
+#### Asunto
+
+[Breve descripción del caso y objetivo del análisis forense]
+
+#### Evidencias/Muestras Recibidas
+
+| Ítem | Descripción | Número de Serie | Estado de Recepción |
+|------|-------------|-----------------|---------------------|
+| 1    | [Ej. Disco duro externo] | [Número] | [Ej. Sin daños aparentes] |
+| 2    | [Ej. Smartphone] | [Número] | [Ej. Pantalla agrietada] |
+
+#### Resolución o Estudios Efectuados sobre las Evidencias/Muestras
+
+1. [Descripción del primer estudio realizado]
+   - Metodología: [Breve explicación]
+   - Herramientas utilizadas: [Lista de herramientas]
+   - Hallazgos principales: [Resumen de hallazgos]
+
+2. [Descripción del segundo estudio realizado]
+   - Metodología: [Breve explicación]
+   - Herramientas utilizadas: [Lista de herramientas]
+   - Hallazgos principales: [Resumen de hallazgos]
+
+#### Situación Final de las Evidencias/Muestras
+
+| Ítem | Estado Final | Ubicación Actual |
+|------|--------------|------------------|
+| 1    | [Ej. Intacto] | [Ej. Devuelto al organismo solicitante] |
+| 2    | [Ej. Sin cambios] | [Ej. Almacenado en laboratorio forense] |
+
+#### Conclusiones Finales
+
+[Resumen conciso de las conclusiones principales del análisis forense, utilizando un lenguaje claro y comprensible]
+
+#### Anexos del Informe
+
+1. [Título del Anexo 1]: [Breve descripción del contenido]
+2. [Título del Anexo 2]: [Breve descripción del contenido]
+
+#### Declaración de Conformidad
+
+Este informe pericial ha sido elaborado siguiendo las directrices de la norma UNE 71506 y UNE 197001, asegurando el cumplimiento de las normativas nacionales para procedimientos legales en España.
+
+#### Entrega y Custodia de Evidencias
+
+Se adjunta el recibo de control de evidencias para su devolución firmada, confirmando la recepción de este informe y las muestras objeto de estudio por parte del organismo solicitante.
+
+[Firma del Perito Informático]
+[Nombre del Perito]
+[Número de Colegiado]
+[Fecha]
+
 ___
 ## Resumen de la metodología
 ### Adquisición de evidencia digital
@@ -313,40 +367,34 @@ Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práct
 
 ### Documentación de hallazgos
 
-1) Ventajas de la Norma UNE 71506
-    + Metodología detallada: A diferencia de otras normas (ISO/IEC 27037, NIST 800-86), UNE 71506 proporciona una estructura más específica para el análisis forense digital.
-    + Planificación metodológica clara: Secuencia temporal bien definida y registros auditables durante todo el proceso.
-    + Enfoque integral: Mejora la documentación de todo el ciclo de vida de la evidencia.
-2) Proceso de Documentación
-    + Aceptación de pruebas:
-        + Crear un documento con todas las evidencias electrónicas.
-        + Gestionar solicitudes de análisis y evidencias.
-    + Registro de documentación:
-        + Describir evidencias, estudios solicitados, permisos y cadena de custodia.
-    + Registro de evidencias:
-        + Descripción detallada de las evidencias y su estado al recibirlas.
-    + Registro de tratamiento inicial:
-        + Documentar el proceso de volcado forense o creación de imágenes.
-    + Registro de situación de evidencias:
-        + Registrar operaciones realizadas sobre la evidencia, quién las realizó y cuándo.
-    + Registro de tareas de análisis inicial:
-        + Documentar las primeras tareas del análisis forense.
-    + Registro de tareas de análisis final:
-        + Incluir una secuencia temporal de los procesos y la ubicación de la evidencia si se suspende el análisis.
+1. Se basa en la norma UNE 71506, adaptada al contexto legal español.
+2. Incluye un acta de documentación de hallazgos con las siguientes secciones:
+   - **Información General**
+   - **Documento de Recepción de Evidencias/Muestras Electrónicas**
+   - **Registro de Documentación Recibida**
+   - **Registro de Reseña de las Evidencias Electrónicas**
+   - **Registro del Tratamiento Inicial**
+   - **Registro de Situación de Evidencias/Muestras**
+   - **Registro de Tareas del Análisis Inicial**
+   - **Registro de Tareas del Análisis de Datos Definitivo**
+   - **Conclusiones Preliminares**
+   - **Firma del Analista**
 
+3. Cada sección contiene campos específicos para detallar la información relevante del análisis forense.
 
 ### Presentación de resultados
 
-1) Enfoque de la UNE 71506:
-    + Cubre el proceso forense completo:
-        + Identificación.
-        + Análisis.
-        + Presentación.
-        + Aplicación directa al contexto legal español.
-2) Informe pericial (o técnico-forense):
-    + Debe acompañar términos técnicos con lenguaje accesible.
-    + Norma UNE 197001 aplicable en la parte general, enfocada en tecnologías de la información.
-3) Proceso de finalización:
-    + Redactar el informe y remitirlo junto a los equipos y soportes digitales al organismo solicitante.
-    + Adjuntar un recibo o documento de control de evidencias, que debe devolverse al emisor para concluir la trazabilidad y custodia de las evidencias.
+1. Se utiliza la norma UNE 71506 para asegurar el cumplimiento de normativas nacionales en España.
+2. Se presenta un acta de presentación de pruebas con las siguientes secciones:
+   - **Información General**
+   - **Asunto**
+   - **Evidencias/Muestras Recibidas**
+   - **Resolución o Estudios Efectuados sobre las Evidencias/Muestras**
+   - **Situación Final de las Evidencias/Muestras**
+   - **Conclusiones Finales**
+   - **Anexos del Informe**
+   - **Declaración de Conformidad**
+   - **Entrega y Custodia de Evidencias**
 
+3. El formato es más conciso y orientado a la presentación de resultados.
+4. Se adjunta un recibo de control de evidencias para su devolución firmada.
