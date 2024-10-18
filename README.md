@@ -136,9 +136,9 @@ Deberemos de actuar de distinta manera dependiendo de si el dispositivo se encue
 
 ### Preservación y almacenamiento de la evidencia
 
-Para la fase de preservación nos hemos basamos en la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de laas evidencias que recopilaremos. 
+Para la fase de preservación nos hemos basamos en la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor se explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de las evidencias que recopilaremos. 
 
-Como factor fundamental nos comentan la importancia de preservar la información digital tal y como nos las encontramos originalmente (sin modificarlas), asegurando así su validez y confiabilidad. ¿Para qué es importante esto? Bueno, es especialmente importante cuando en un caso forense los datos se mantengan intactos, así garantizamos que cualquier análisis que se haga posteriormente puedan utilizar los mismos datos por si en algún momento se necesita un contraanalisis o alguna revisión.  
+Como factor fundamental nos comentan la importancia de preservar la información digital tal y como nos la encontramos originalmente (sin modificarlas), asegurando así su validez y confiabilidad. ¿Para qué es importante esto? Bueno, es especialmente importante cuando en un caso forense los datos se mantengan intactos, así garantizamos que cualquier análisis que se haga posteriormente puedan utilizar los mismos datos por si en algún momento se necesita un contraanálisis o alguna revisión.  
 <!-- Toda organización o empresa debe tener en consideración los siguientes principios al manejar datos o evidencias electrónicas que puedan ser sometidas a un análisis forense:
 1.  Se deben establecer protocolos claros y detallados para la protección de la evidencias digitales durante el análisis forense. Esto es para garantizar que no se altera la evidencia de niguna manera, ya sea de manera internacional o accidental. Estos nos pueden ayudar a prevenir situaciones como:  
     + **Tampering** (manipulación intencionado): evitamos que alguien manipule las evidencias de manera intencionada.
@@ -156,17 +156,17 @@ Como factor fundamental nos comentan la importancia de preservar la información
     + **Evitar dispositivos que generen señales de radiofrecuencia**: los técnicos no deberan llevar dispositivos consigo que emitan señales de radio como puede ser un móvil. Estas señales podrían interferir con la evidencia, pudiendo alterar datos.
     + **Soportes aislados**: en algunso casos, es necesario el uso de cajas especiales las cuales bloquean interferencias externas (como ondas de radio o campos electromagnéticos). Esto sirve para proteger los datos originales y evitar cualquier modificación de los datos. -->
 
-Simultaneamente, los técnicos a parte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
+Simultáneamente, los técnicos a parte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
 
-Los técnicos deberan de seguir una premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
+Los técnicos deberán de seguir una premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
 
 + **Precintar y sellar las evidencias**, tendremos que guardarlas en recipientes adecuados como pueden ser contenedores, cajas, bolsas... También deberán de estar selladas de una forma segura, garantizando así la no manipulación o alteración de las evidencias. 
 
-+ **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el analisis de los técnicos forenses.
++ **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegidas hasta que se lleve a cabo el análisis de los técnicos forenses.
 
-+ **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o moviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible perdida de datos.   
++ **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o máviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible pérdida de datos.   
 
-A continuación hemos creado un informe donde quedara por escrito la información de importancia en la cadena de custodia. Esta cadena hace refenrencia al proceso por el que pasan las evidencias desde que se ha llevado la adquisición.  
+A continuación hemos creado un informe donde quedará por escrito la información de importancia en la cadena de custodia. Esta cadena hace referencia al proceso por el que pasan las evidencias desde que se ha llevado la adquisición.  
 En este proceso se recoge a quien se entrega las evidencias, datos sobre la misma, si se crean copias de las evidencias, comprobaciones de hash, etc. Esto más que nada es para llevar un registro y preservar la integridad de las mismas, debido a que si en algún momento existe cualquier alteración de los datos se sepa en que parte de la cadena ha ocurrido. 
 
 ## CADENA DE CUSTODIA
