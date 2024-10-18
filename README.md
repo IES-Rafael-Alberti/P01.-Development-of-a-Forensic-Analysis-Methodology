@@ -1,6 +1,9 @@
-# Proyecto 1: Development of a Forensic Analysis Methodology
+# Development of a Forensic Analysis Methodology
+
+Se nos ha encargado realizar nuestra propia metodología para el análisis forense digital. Durante este documento pasaremos por cuatro bloques donde analizaremos las normas existentes relacionadas con el análisis forense digital e intentaremos adaptarlas a nuestras necesidades dando forma a una nueva metodología propia.
 
 ## Investigación de normas y estándares forenses
+Existen varias normativas que aluden al análisis forense digital, pero entre ellos destacan seis documentos que, aun tratando temas variados; engloban un contexto que nos puede ser útil para nuestra metodología. A continuación, hablaremos de ellos.
 
 + ### UNE 71506
     Es una norma de origen español que establece la metodología para el análisis forense de evidencias informáticas. Define las distintas fases del proceso: preservación, adquisición, análisis y presentación de las evidencias digitales. Nos indica como debemos proceder para que las pruebas obtenidas sean legalmente válidas en España adaptando estándares internacionales.
@@ -32,59 +35,104 @@
 
 ___
 ## Comparativa de las normas y estándares
+
+Algunas de las normas y estándares analizados tienen similitudes entre si. Aunque existen algunas similitudes y solapamientos entre ellos, cada uno tiene un enfoque y alcance particular que analizaremos a continuación.
+
 ### UNE 71506, NIST Special Publication 800-86 e ISO/IEC 27037:2012(E)
 Aunque estas tres normas cubren gran parte del proceso de análisis forense digital sólo el UNE 71506 cubre el proceso completo mientras que el ISO/IEC 27037:2012(E) se centra en la identificación, recolección, adquisición y preservación de las evidencias digitales y el NIST Special Publication 800-86 se centra en integrar técnicas forenses en la respuesta a incidentes. Además el UNE 71506 es una norma española aplicable en el contexto legal y forense español, mientras que el NIST Special Publication 800-86 está más orientada a las organizaciones de los EE.UU. y el ISO/IEC 27037:2012(E) está diseñada para poder aplicarse internacionalmente.
+|          | Ámbito | Características principales |
+|:--------:|:------:|:---------------------------:|
+| **UNE 71506** | España | Proceso completo del análisis forense |
+| **NIST Special Publication 800-86** | Internacional | Fases iniciales del análisis forense |
+| **ISO/IEC 27037:2012(E)** | EE.UU. | Integración técnicas forenses en respuesta a incidentes |
 
 ### UNE 71505-3 y UNE 197010
 
 Estas dos normas se relacionan con el manejo de las evidencias digitales y tecnologías de la información y comunicación (TIC).También son relevantes para el campo de la informática forense y peritaje tecnológico. Y además ambas son normas UNE (Una Norma Española), diseñadas para el uso en un contexto español.
 
-Aunque también tiene varias diferencias como pueden ser que la UNE 71505-3 trata sobre formatos de intercambios de evidencias y mecanismo para mantener su confiabilidad, también se enfoca en las fases de gestión y manejo técnico de las evidencias en cambio la norma UNE 197010 establece requisitos formales ara informes y dictámenes periciales, sin entrar en métoos específicos de análisis y también se centra en la fase final de presentación de resultados en forma de informes y dictámenes.
+Aunque también tiene varias diferencias como pueden ser que la UNE 71505-3 trata sobre formatos de intercambios de evidencias y mecanismo para mantener su confiabilidad, también se enfoca en las fases de gestión y manejo técnico de las evidencias en cambio la norma UNE 197010 establece requisitos formales ara informes y dictámenes periciales, sin entrar en métodos específicos de análisis y también se centra en la fase final de presentación de resultados en forma de informes y dictámenes.
 
-
+|          | Características principales |
+|:--------:|:---------------------------:|
+| **UNE 71505-3** | Formatos de intercambio de evidencias y mecanismos para mantener su confiabilidad. Enfoque en fases de gestión y manejo técnico de las evidencias. |
+| **UNE 197010** | Requisitos formales para informes y dictámenes periciales. Enfoque en la presentación final de resultados. |
 
 ### RFC 4998 y RFC 6283
 Ambas se centran en demostrar la existencia de datos en momento concreto con el uso de marcas de tiempo, el RFC 4998 es más amplio, definiendo los requisitos generales para el registro de evidencias además de definir el estándar ERS mientras que el RFC 6283 se centra específicamente en la implementación del estándar ERS con el uso de XML.
+|          | Características principales |
+|:--------:|:---------------------------:|
+| **RFC 4998** | Estándar ERS y requisitos para el registro de evidencias |
+| **RFC 6283** | Adaptación de ERS con XML |
 
-
-### RFC 3227 y 4810
+### RFC 3227 y RFC 4810
 
 Aunque ambos RFCs tratan sobre la preservación de datos, el RFC 4810 tiene un enfoque diferente al del RFC 3227, ya que no se centra en la recolección de evidencia digital en un contexto inmediato, sino que trata el almacenamiento seguro y la recuperación de archivos digitales a largo plazo, enfocandose en la autenticidad y la disponibilidad a largo plazo.
+
+|          | Características principales |
+|:--------:|:---------------------------:|
+| **RFC 3227** | Recolección de evidencia digital en un contexto inmediato |
+| **RFC 4810** | Almacenamiento seguro y recuperación de archivos digitales a largo plazo |
+
+
 ___
 ## Desarrollo de metodología propia
+
+Tras realizar un estudio de las normas existentes, hemos decidido incluir en nuestra metodología las normas ISO/IEC 27037:2012(E), UNE 71506:2013, UNE 71506. En cada apartado analizaremos en que normativa se basa y el porqué de nuestra elección. 
+
 ### Adquisición de evidencia digital
- Para la adquisición de evidencia digital hemos decidido basarnos en la norma ISO/IEC 27037:2012(E) ya que está diseñada para aplicarse en el ámbito internacional a diferencia de la UNE 71506 que se centra más en el ámbito español. Esto nos permitirá mantener nuestra metodología aunque trabajemos fuera del ámbito español.
+Para la adquisición de evidencia digital hemos decidido basarnos en la norma ISO/IEC 27037:2012(E) ya que está diseñada para aplicarse en el ámbito internacional a diferencia de la UNE 71506 que se centra más en el ámbito español. Esto nos permitirá mantener nuestra metodología aunque trabajemos fuera del ámbito español.
 
- Esta parte de la metodología se centra en la identificación de posibles evidencias digitales y objetos relacionados (como por ejemplo post-its en un monitor con posibles contraseñas) y en la adquisición de dichas evidencias ya sea en la propia escena de la investigación o en nuestro laboratorio forense.
+Durante la identificación de evidencias y la adquisición deberemos de ir rellenando nuestro acta de adquisición de evidencias digitales. Para ello usaremos el siguiente modelo:
+#### Acta de Adquisición de Evidencias Digitales
+| Acta de Adquisición de Evidencias Digitales |                                   |
+|---------------------------------------------|-----------------------------------|
+| **1. Información General**                  |                                   |
+| Número de Caso                              |                                   |
+| Fecha y Hora de Adquisición                 |                                   |
+| Lugar de Adquisición                        |                                   |
+| Analista Forense                            |                                   |
+| Número de Identificación del Analista       |                                   |
+| **2. Descripción del Dispositivo/Evidencia** |                                   |
+| Tipo de Dispositivo                         |                                   |
+| Marca y Modelo                              |                                   |
+| Número de Serie                             |                                   |
+| Capacidad de Almacenamiento                 |                                   |
+| Estado Físico                               |                                   |
+| **3. Metodología de Adquisición**           |                                   |
+| Herramientas Utilizadas                     |                                   |
+| Método de Adquisición                       |                                   |
+| Hash de Verificación MD5                    |                                   |
+| Hash de Verificación SHA-256                |                                   |
+| **4. Detalles del Proceso**                 |                                   |
+| Hora de Inicio                              |                                   |
+| Hora de Finalización                        |                                   |
+| Observaciones                               |                                   |
+| **5. Testigos**                             |                                   |
+| Nombre del Testigo 1                        |                                   |
+| Firma Testigo 1                             |                                   |
+| Nombre del Testigo 2                        |                                   |
+| Firma Testigo 2                             |                                   |
+| **6. Declaración del Analista**             | Yo, _______________________, certifico que la información contenida en esta acta es verdadera y precisa según mi mejor conocimiento y habilidad. La adquisición de evidencias se realizó siguiendo los procedimientos forenses estándar y manteniendo la integridad de la evidencia en todo momento. |
+| Firma del Analista                          |                                   |
+| Fecha                                       |                                   |
+| **8. Anexos**                               | - Fotografías del dispositivo<br>- Logs de la herramienta de adquisición<br>- Otros documentos relevantes |
 
- Cuando identifiquemos las posibles evidencias deberemos de fotografiar y anotar todas las posibles evidencias digitales, su estado y su localización. Deberemos de asegurarnos de no cambiar el estado de dichos dispositivos (por ejemplo encender un portatil que se encontraba apagado) y de que nadie manipule las evidencias.
-
- Tras haber realizado el proceso de identificación deberemos de determinar si debemos de recolectar las fuentes de evidencias para realizar su adquisición más tarde en nuestro laboratorio forense o adquirirlas in situ. Para esto deberemos de tener en cuenta si los dispositivos están encendidos o no, la volatilidad de las posibles evidencias, la existencia de encriptado de los discos. Si por ejemplo nos encontramos con un equipo encendido con discos encriptados pero cuya clave se encuentra en la memoria volátil del equipo deberíamos de realizar la adquisición en ese momento, ya que podríamos perder el acceso a esos discos duros encriptados.
-
- Según si pensamos realizar una adquisición o una recolección y si el equipo se encuentra encendido o apagado deberemos de seguir unos pasos distintos:
-
- **Recolección de dispositivos encendidos**
-1) Considerar la adquisición de la memoria volátil del dispositivo y de su estado actual antes de apagarlo. Debemos de realizar esta adquisición documentando todo el proceso y con nuestras propias herramientas ya que no podemos confiar en las del propio dispositivo.
-2) Apagar el dispositivo y desconectar su batería en caso de ser un dispositivo portátil.
-3) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
-4) Poner cinta adhesiva sobre el botón de encendido del dispositivo para evitar su encendido, además de sobre el lector de DVDs en caso de tenerlo.
-5) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
-
-**Recolección de dispositivos apagados**
-1) Desconectar el cable de corriente retirando primero el extremo conectado al dispositivo.
-2) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
-3) Poner cinta adhesiva sobre el botón de encendido del dispositivo para evitar su encendido, además de sobre el lector de DVDs en caso de tenerlo.
-4) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
+Deberemos de actuar de distinta manera dependiendo de si el dispositivo se encuentra encendido desde la incidencia que estamos investigando o si el dispositivo se ha apagado en algún momento desde la incidencia.
 
 **Adquisición de dispositivos encendidos**
-1) Considerar la adquisición de la memoria volátil del dispositivo y de su estado actual antes de apagarlo. Debemos de realizar esta adquisición documentando todo el proceso y con nuestras propias herramientas ya que no podemos confiar en las del propio dispositivo.
-2) Realizar la adquisición de la memoria no volátil del dispositivo documentando todo el proceso y realizando la imagen usando una herramienta validada. Esta imagen deberá ser almacenada en un dispositivo de almacenamiento nuevo o formateado de manera segura.
+1) Realizar la adquisición de la memoria volátil del dispositivo
+2) Realizar la adquisición de la memoria no volátil del dispositivo.
+3) Apagar el dispositivo y desconectar su batería en caso de ser un dispositivo portátil.
+4) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
+5) Poner cinta adhesiva sobre el botón de encendido del dispositivo y el lector ded CDs.
+6) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
 
 **Adquisición de dispositivos apagados**
-1) Asegurarnos de que el dispositivo realmente está apagado.
-2) Desconectar el dispositivo de almacenamiento si aún está conectado al equipo.
-3) Realizar la imagen del dispositivo de almacenamiento usando una herramienta validada, documentando el proceso y almacenando la imagen en un dispositivo de almacenamiento nuevo o formateado de manera segura.
-4) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
+1) Realizar la adquisición de la memoria no volátil del dispositivo.
+2) Desconectar el cable de corriente retirando primero el extremo conectado al dispositivo.
+3) Etiquetar, desconectar y asegurar todos los cables del dispositivo, etiquetando también los puertos para reconstruirlo luego.
+4) Poner cinta adhesiva sobre el botón de encendido del dispositivo y el lector ded CDs.
+5) Almacenar el dispositivo en un recipiente adecuado y sellándolo.
 
 ### Preservación y almacenamiento de la evidencia
 
@@ -108,24 +156,24 @@ Toda organización o empresa debe tener en consideración los siguientes princip
     + **Evitar dispositivos que generen señales de radiofrecuencia**: los técnicos no deberan llevar dispositivos consigo que emitan señales de radio como puede ser un móvil. Estas señales podrían interferir con la evidencia, pudiendo alterar datos.
     + **Soportes aislados**: en algunso casos, es necesario el uso de cajas especiales las cuales bloquean interferencias externas (como ondas de radio o campos electromagnéticos). Esto sirve para proteger los datos originales y evitar cualquier modificación de los datos.
 
+Simultáneamente, los técnicos aparte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
 
-Simultaneamente, los técnicos a parte de seguir los principios antes mencionados para una preservación correcta de las evidencias también deberán llevar a cabo los siguientes pasos:
-
-1. Los técnicos deberan de seguir una premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
+1. Los técnicos deberán de seguir unas premisas para garantizar la seguridad de las premisas antes de ser analizada por los especialistas forenses. Las premisas que nos detallan son:
 
     + **Precintar y sellar las evidencias**, tendremos que guardarlas en recipientes adecuados como pueden ser contenedores, cajas, bolsas... También deberán de estar selladas de una forma segura, garantizando así la no manipulación o alteración de las evidencias. 
 
-    + **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el analisis de los técnicos forenses.
+    + **Almacenamiento hasta el análisis**, es decir, las evidencias deben mantenerse protegida hasta que se lleve a cabo el análisis de los técnicos forenses.
 
-    + **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o moviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible perdida de datos. 
-
+    + **Atención especial para dispositivos que requieran de energía**. Nos referimos con esto a dispositivos que necesiten de alimentación externa para funcionar como pueden ser equipos informáticos o móviles. Esto requiere que haya que mantenerlos conectados a una fuente segura para así evitar la posible pérdida de datos. 
 
 ### Análisis de la evidencia
 
-Para adaptar la fase de analisis, despues de valorar las diferentes opciones disponibles hemos optado por utilizar de base la normativa UNE 71506. Este manual se centra en el analisis forense y lo explica de manera sencilla y concisa pero mantiene la base funcional que necesitamos. 
+Para adaptar la fase de análisis, después de valorar las diferentes opciones disponibles hemos optado por utilizar de base la normativa UNE 71506. Este manual se centra en el análisis forense y lo explica de manera sencilla y concisa pero mantiene la base funcional que necesitamos. 
 
 El análisis forense de evidencias digitales debe seguir un proceso metódico, auditable y repetible. El objetivo es responder a preguntas sobre el tiempo de intrusión, su origen, los sistemas afectados, los métodos usados, y los activos alterados o accedidos.
 Antes de iniciar el análisis, se deben cumplir los siguientes pasos preliminares:
+
+#### Pasos Preliminares
 
 1. **Comprobar competencias**: Verificar si el análisis solicitado está dentro de la competencia del laboratorio forense.
 2. **Revisión documental**: Estudiar la documentación adjunta para contextualizar las evidencias y las relaciones entre ellas.
@@ -136,23 +184,23 @@ Antes de iniciar el análisis, se deben cumplir los siguientes pasos preliminare
 7. **Hora del BIOS**: Registrar la hora del BIOS del equipo donde se alojan los discos para poder comparar la cronología.
 8. **Establecer prioridades**: Definir criterios de prioridad en el análisis.
 
-#### 1. Recuperación de ficheros borrados
+#### Recuperación de ficheros borrados
 Este proceso busca recuperar archivos eliminados de las estructuras de almacenamiento (como tablas FS o MFT). Además, se recuperan archivos de áreas no asignadas del disco o ficheros "huérfanos". También se localizan fragmentos de archivos mediante la búsqueda de sus cabeceras. La trazabilidad de toda la información recuperada debe estar documentada en el informe.
 
-#### 2. Estudio de particiones y sistemas de archivos
+#### Estudio de particiones y sistemas de archivos
 Se analiza la estructura de almacenamiento (particiones, volúmenes físicos y lógicos, sistemas RAID, etc.). Este proceso incluye:
 - **Enumeración** de particiones actuales y previas.
 - **Identificación** de áreas ocultas (HPA, DCO).
 - **Reconocimiento** de sistemas de archivos en contenedores y discos cifrados.
 - **Análisis** de archivos comprimidos y sus cabeceras.
 
-#### 3. Estudio del sistema operativo
+#### Estudio del sistema operativo
 Se identifican los sistemas operativos instalados, su fecha de instalación, actualizaciones, usuarios, privilegios y las últimas actividades registradas. También se examinan los dispositivos de hardware y software reconocidos por el sistema.
 
-#### 4. Estudio de la seguridad implementada
+#### Estudio de la seguridad implementada
 Este proceso evalúa si las evidencias han sido comprometidas mediante métodos de intrusión, modificación o eliminación. Se debe identificar malware (virus, troyanos, etc.) y evaluar su impacto en el sistema.
 
-#### 5. Análisis detallado de los datos obtenidos
+#### Análisis detallado de los datos obtenidos
 Se realiza un análisis exhaustivo de las evidencias electrónicas utilizando software forense especializado. Este análisis incluye la clasificación y, opcionalmente, el indexado de los datos, lo que agiliza la búsqueda de información clave mediante palabras o criterios específicos.
 
 El análisis debe incluir:
@@ -178,7 +226,6 @@ El análisis debe incluir:
 19. Registros de mensajería instantánea y chats.
     
 
-
 ### Documentación de hallazgos
 
 Para realizar un buen análisis forense nos hemos basado en la norma UNE 71506 ya que se adapta perfectamente al contexto de leyes nacionales y legales en España. A continuación le dejo un ejemplo de como se debería hacer un acta de documentación de hallazgos:
@@ -196,7 +243,6 @@ Para realizar un buen análisis forense nos hemos basado en la norma UNE 71506 y
 | **7. Registro de Tareas del Análisis de Datos Definitivo** | **Tarea 1**:<br>Descripción: [Descripción detallada]<br>Inicio: [Fecha y hora]<br>Finalización: [Fecha y hora]<br>Herramientas utilizadas: [Lista de herramientas]<br>Hallazgos: [Descripción detallada hallazgos]<br>Ubicación temporal evidencia: [Si aplicable]<br><br>**Tarea 2**: [Repetir para cada tarea del análisis definitivo] |
 | **Conclusiones Preliminares** | [Breve resumen de los hallazgos más significativos y su relevancia para el caso] |
 | **Firma del Analista** | [Nombre del Analista]<br>[Firma]<br>[Fecha] |
- 
 
 ### Presentación de resultados
 Hemos seleccionado el UNE 71506 ya te permite asegurar el cumplimiento de las normativas nacionales, lo cual es muy importante para los procedimientos legales en España. Si bien otras normas como la ISO/IEC 27037:2012(E) o la NIST SP 800-86 ofrecen buenas indicaciones, su enfoque internacional no se alinea tan directamente con las necesidades específicas de un proceso forense en España.Aquí tenemos un acta de ejemplo de como se deberían presentar las pruebas para un análisis forense.
@@ -237,10 +283,12 @@ Hemos seleccionado el UNE 71506 ya te permite asegurar el cumplimiento de las no
 
 #### Situación Final de las Evidencias/Muestras
 
+
 | Ítem | Estado Final | Ubicación Actual |
 |------|--------------|------------------|
 | 1    | [Ej. Intacto] | [Ej. Devuelto al organismo solicitante] |
 | 2    | [Ej. Sin cambios] | [Ej. Almacenado en laboratorio forense] |
+
 
 #### Conclusiones Finales
 
@@ -264,18 +312,19 @@ Se adjunta el recibo de control de evidencias para su devolución firmada, confi
 [Número de Colegiado]
 [Fecha]
 
+
 ___
 ## Resumen de la metodología
-### Adquisición de evidencia digital
 
-Primero identificar evidencias digitales y objetos relacionados fotografiándolos y anotando todo sobre ellos.
+Una vez realizada nuestra metodología, esquematizaremos las partes que la componen para tener una guía visual de cómo funciona de forma muy reducida el flujo de acciones. Veremos los cuatro apartados que la componen:
 
-Luego decidir si realizar una adquisición o recolección dependiendo del estado de los dispositivos y si están encendidos o no.
+### [Adquisición de evidencia digital](#adquisición-de-evidencia-digital)
 
-|                 | Dispositivo encendido | Dispositivo apagado |
-| :-------------: | :-------------------: | :-----------------: |
-| **Recolección** | 1. Adquisición de memoria volátil <br> 2. Apagarlo y desconectar batería si tiene <br> 3. Etiquetar, desconectar y asegurar cables <br> 4. Cinta sobre el botón de inicio y lector de CDs <br> 5. Almacenamiento y sellado| 1. Desconectar cable de corriente <br> 2. Etiquetar, desconectar y asegurar cables <br> 3. Cinta sobre el botón de inicio y lector de CDs <br> 4. Almacenamiento y sellado|
-| **Adquisición** | 1. Adquisición de la memoria volátil <br> 2. Adquisición de la memoria no volátil| 1. Asegurar que está apagado <br> 2. Desconectar dispositivo de almacenamiento <br> 3. Bloquear la escritura y realizar la imagen del dispositivo de almacenamiento <br> 4. Almacenamiento y sellado|
+[Acta de Adquisición de Evidencias Digitales](#acta-de-adquisición-de-evidencias-digitales)
+
+| Dispositivo encendido | Dispositivo apagado |
+| :-------------------: | :-----------------: |
+| 1. Adquisición memoria volátil <br> 2. Adquisición memoria no volátil <br> 3. Apagar dispositivo <br> 4. Adquisición de cables <br> 5. Tapar botón de encendido y lector de CDs <br> 6. Almacenamiento | 1. Adquisición memoria no volátil <br> 2. Apagar dispositivo <br> 3. Adquisición de cables <br> 4. Tapar botón de encendido y lector de CDs <br> 5. Almacenamiento|
 
 ### Preservación y almacenamiento de la evidencia
 
@@ -283,9 +332,9 @@ Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práct
 
 + **Preservación de información digital.**
 
-    - Es clave mantener las evidencias recogidas en su estado orginal (sin ninguna modificación)
+    - Es clave mantener las evidencias recogidas en su estado original (sin ninguna modificación)
     - Esto importante para garantizar y confiabilidad de los datos.
-    - Permiten posibles revisones de análisis 
+    - Permiten posibles revisiones de análisis 
 
 + **Principios para manejo de evidencias digitales**
 
@@ -316,54 +365,16 @@ Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práct
     - Almacenamiento hasta el análisis (mantener protegidas las evidencias hasta el análisis)
     - Atención a dispositivos que requieran energía (mantenerlos conectados para evitar la pérdida de datos)
 
-### Análisis de la evidencia
+### [Análisis de la evidencia](#análisis-de-la-evidencia)
 
-#### Fase Preliminar: Preparación y Verificación
-1. **Comprobar competencias**: Verificar la idoneidad del laboratorio para el análisis.
-2. **Revisión documental**: Analizar la documentación adjunta para entender el contexto de las evidencias.
-3. **Supervisión de la cadena de custodia**: Revisar la recolección, almacenamiento y transferencia de evidencias.
-4. **Autorizaciones**: Obtener los permisos legales necesarios para el análisis.
-5. **Comprobación del estado de las evidencias**: Verificar la integridad y disponibilidad para el análisis.
-6. **Registro de evidencias adicionales**: Documentar cualquier nueva evidencia encontrada y obtener permisos adicionales.
-7. **Registrar la hora del BIOS**: Documentar la hora del BIOS del equipo para futuras referencias de cronología.
-8. **Establecer prioridades**: Definir el orden de análisis según la criticidad y relevancia.
-
-#### Fase 1: Recuperación de Ficheros Borrados
-- **Recuperación de archivos eliminados**: Buscar en la tabla de archivos (FS o MFT) y en áreas no asignadas.
-- **Localización de archivos huérfanos y fragmentados**: Identificar y reconstruir ficheros a partir de cabeceras.
-- **Documentación de la trazabilidad**: Registrar todas las acciones y resultados de recuperación.
-
-#### Fase 2: Estudio de Particiones y Sistemas de Archivos
-- **Enumeración de particiones**: Identificar particiones actuales y anteriores.
-- **Detección de áreas ocultas**: Buscar áreas protegidas (HPA, DCO).
-- **Reconocimiento de sistemas de archivos**: Analizar contenedores, discos cifrados y archivos comprimidos.
-
-#### Fase 3: Análisis del Sistema Operativo
-- **Identificación de sistemas operativos**: Determinar las versiones, fechas de instalación y actualizaciones.
-- **Análisis de usuarios y privilegios**: Revisar los usuarios registrados y sus niveles de acceso.
-- **Registro de hardware y software**: Listar dispositivos conectados y aplicaciones reconocidas.
-
-#### Fase 4: Evaluación de la Seguridad Implementada
-- **Detección de intrusiones y malware**: Identificar posibles alteraciones o compromisos en las evidencias.
-- **Evaluación del impacto**: Determinar el alcance del daño causado por el malware.
-
-#### Fase 5: Análisis Detallado de los Datos Obtenidos
-- **Análisis exhaustivo**: Usar software especializado para clasificar y buscar datos relevantes.
-- **Áreas de interés específicas**:
-
-| N.º | Área de interés                            | N.º | Área de interés                          |
-|-----|--------------------------------------------|-----|------------------------------------------|
-| 1   | Información del sistema                    | 11  | Carpetas de usuarios                     |
-| 2   | Dispositivos conectados (USBs, impresoras) | 12  | Programas instalados                     |
-| 3   | Escritorio y papelera de reciclaje         | 13  | Metadatos                                |
-| 4   | Conexiones de red y protocolos             | 14  | Aplicaciones de virtualización           |
-| 5   | Comunicaciones realizadas                  | 15  | Bases de datos                           |
-| 6   | Registros del sistema                      | 16  | Archivos cifrados y particiones protegidas|
-| 7   | Espacios no asignados del disco            | 17  | Historial de navegación y cookies        |
-| 8   | Archivos de hibernación y paginación       | 18  | Correos electrónicos                     |
-| 9   | Cola de impresión                          | 19  | Registros de mensajería y chats          |
-| 10  | Enlaces a archivos recientes               |     |                                          |
-
+| Fase | Descripción |
+|------|-------------|
+| **[Pasos preliminares](#pasos-preliminares)** | 1. Comprobar competencias<br>2. Revisión documental<br>3. Supervisión de la cadena de custodia<br>4. Autorizaciones<br>5. Comprobación de estado<br>6. Evidencias adicionales<br>7. Hora del BIOS<br>8. Establecer prioridades |
+| **[Recuperación de ficheros borrados](#recuperación-de-ficheros-borrados)** | - Recuperar archivos eliminados<br>- Localizar fragmentos de archivos<br>- Documentar trazabilidad |
+| **[Estudio de particiones y sistemas de archivos](#estudio-de-particiones-y-sistemas-de-archivos)** | - Enumeración de particiones<br>- Identificación de áreas ocultas<br>- Reconocimiento de sistemas de archivos<br>- Análisis de archivos comprimidos |
+| **[Estudio del sistema operativo](#estudio-del-sistema-operativo)** | - Identificar sistemas operativos instalados<br>- Examinar usuarios y privilegios<br>- Analizar dispositivos de hardware y software |
+| **[Estudio de la seguridad implementada](#estudio-de-la-seguridad-implementada)** | - Evaluar compromiso de evidencias<br>- Identificar malware<br>- Evaluar impacto en el sistema |
+| **[Análisis detallado de los datos obtenidos](#análisis-detallado-de-los-datos-obtenidos)** | 1. Información del sistema<br>2. Dispositivos conectados<br>3. Escritorio y papelera<br>4. Conexiones de red<br>5. Comunicaciones<br>6. Registros del sistema<br>7. Espacios no asignados<br>8. Archivos de sistema<br>9. Cola de impresión<br>10. Enlaces recientes<br>11. Carpetas de usuarios<br>12. Programas instalados<br>13. Metadatos<br>14. Aplicaciones de virtualización<br>15. Bases de datos<br>16. Archivos cifrados<br>17. Navegación por Internet<br>18. Correos electrónicos<br>19. Registros de mensajería |
 
 ### Documentación de hallazgos
 
@@ -398,3 +409,4 @@ Escogemos la UNE 71506:2013 para este apartado por su enfoque detallado y práct
 
 3. El formato es más conciso y orientado a la presentación de resultados.
 4. Se adjunta un recibo de control de evidencias para su devolución firmada.
+
